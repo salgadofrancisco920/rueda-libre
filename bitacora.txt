@@ -11,3 +11,14 @@ Codigo de estado: 304
  html:con este le daremos estructura a la pagina web definiendo los elementos mas importantes como textos, imagenes, formularios, encabezados,etc.
  css:con este le daremos estilo a la interfaz visual por ejemplo colores,fuentes,etc.
  JavaScript:con este haremos que la pagina sea interactiva y tenga una respectiva logica de funcionamineto por ejemplo validar formularios, animaciones avanzadas,etc.
+
+ Punto 2 de Minireto dia 1:Revisando Elements por primera vez luego de analizar lo hecho no aparecio ningun error
+
+ Punto 4 de Minireto dia 1:Al usar las Devtools de Network todo funciona correctamente aunque al usar los correos que no son reales subraya en color rojo la peticion pero no muestra un error
+
+ index.html ---> tarifas.html ---> paginas/tarifas
+ index.html ---> rservas.html ---> paginas/reservas
+ paginas/tarifas.index.htmlc---> ../index.html
+
+ 
+ 
