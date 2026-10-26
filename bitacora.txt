@@ -43,5 +43,41 @@ Opciones únicas (<input type="radio"> para la modalidad de tarifa): Los usé po
 
 Área de texto (<textarea> para comentarios): Decidí incluirlo para que los usuarios tengan la libertad de escribir observaciones o requerimientos 
 especiales más largos que no caben en una simple línea de texto tradicional.
+
+Campo----Dato de prueba----Resultado esperado----Resultado obtenido
+Documento----(Vacío)----Error: Requerido----Error: Requerido
+Documento----123a-----Error: Formato (solo números)----Error: Formato incorrecto
+Celular----(Vacío)----Error: Requerido----Error: Requerido
+Celular----300123----Error: Formato (10 dígitos)----Error: Formato incorrecto
+Celular----123456780----Error: Formato (10 dígitos)----Error: Formato incorrecto
+Fecha----2024-05-30----Error: Rango (fuera del máximo)----Error: Rango inválido
+Cantidad----0----Error: Rango (fuera del mínimo)----Error: Rango inválido
+Cantidad----7----Error: Rango (fuera del máximo)----Error: Rango inválido
+
+
+
+Página----Hallazgo Detectado----Corrección Aplicada
+
+index.html----Falta de atributo de idioma en la etiqueta raíz.----Se añadió el atributo lang="es".
+
+index.html----Imagen decorativa sin atributo alt.----Se agregó alt="" para ignorarla en lectores de pantalla.
+
+tarifa.html----Salto incorrecto en la jerarquía de encabezados (<h1> a <h4>).----Se cambió el nivel a <h2>para mantener el orden lógico.
+
+reservas.html----Campos del formulario sin etiquetas asociadas.----Se agregaron etiquetas <label> vinculadas a cada control.
+
+
+Tabla de Evaluación de Contraste
+Texto y Fondo (Uso recomendado)
+Blanco sobre Verde Ruta----Ideal para texto normal y párrafos
+Blanco sobre Naranja Pedal----Solo para títulos o textos grandes
+Azul Noche sobre Naranja Pedal----Ideal para texto normal y botones
+Azul Noche sobre Crema----Ideal para texto principal y lectura general
+Gris Asfalto sobre Crema----Ideal para párrafos y descripciones
+Verde Ruta sobre Crema----Ideal para textos destacados y subtítulos
+Naranja Pedal sobre Crema----Solo para títulos grandes o logotipos
+Blanco sobre Azul Noche----Ideal para encabezados y fondos oscuros
+
+
  
  

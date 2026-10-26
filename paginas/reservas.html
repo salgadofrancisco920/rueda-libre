@@ -7,8 +7,7 @@
 </head>
 <body>
 
-    <!-- Encabezado y navegación principal -->
-    <header>
+   <header>
         <h1>Rueda Libre</h1>
         <nav>
             <ul>
@@ -19,24 +18,20 @@
         </nav>
     </header>
 
-    <!-- Contenido principal -->
     <main>
         
-        <!-- Sección del Formulario de Reserva (Paso 1) -->
         <section>
             <h2>Formulario de reserva</h2>
             <p>Escríbenos o completa tus datos para confirmar disponibilidad.</p>
 
-            <!-- Formulario con método post (Paso 1 y Requisitos Técnicos) -->
             <form action="#" method="post">
-                
-                <!-- Grupo 1: Tus datos (Paso 2, 4) -->
+
                 <fieldset>
                     <legend>Tus datos</legend>
                     
                     <p>
                         <label for="nombre">Nombre completo:</label><br>
-                        <input type="text" id="nombre" name="nombre" required>
+                        <input type="text" id="nombre" name="nombre" minlength="3" maxlength="100"pattern="[A-Za-zÁÉÍÓÚáéíóúÜüÑñ ]+" title="Ingresa tu nombre usando solo letras y espacios" required>
                     </p>
 
                     <p>
@@ -46,47 +41,48 @@
 
                     <p>
                         <label for="telefono">Teléfono de contacto:</label><br>
-                        <input type="tel" id="telefono" name="telefono" required>
+                        <input type="tel" id="telefono" name="telefono" pattern="3[0-9]{9}" title="Ingrese un número de teléfono válido" required>
                     </p>
 
                     <p>
                         <label for="documento">Número de documento:</label><br>
-                        <input type="number" id="documento" name="documento" required>
+                        <input type="number" id="documento" name="documento" pattern="[0-9]{8,10}" title="Ingrese un número de documento válido" required>
                     </p>
                 </fieldset>
-
-                <!-- Grupo 2: Tu alquiler (Paso 2, 3, 4 y Criterios de cumplimiento) -->
                 <fieldset>
                     <legend>Tu alquiler</legend>
 
                     <p>
                         <label for="tipo-bici">Selecciona el tipo de bicicleta:</label><br>
-                        <select id="tipo-bici" name="tipo_bici">
+                        <select id="tipo-bici" name="tipo_bici" required>
+                            <option value="">-- Selecciona --</option>
                             <option value="urbana">Urbana</option>
                             <option value="montana">Montaña</option>
                             <option value="electrica">Eléctrica</option>
                         </select>
                     </p>
-
+                    <p>
+                        <label for="cantidad">¿Cuántas bicicletas desea alquilar?</label><br>
+                        <input type="number" id="cantidad" name="cantidad" min="1" max="6" required>
+                    </p>
                     <p>¿Qué modalidad de tarifa prefieres?</p>
                     <p>
-                        <input type="radio" id="tarifa-hora" name="modalidad" value="hora">
+                        <input type="checkbox" id="tarifa-hora" name="modalidad" value="hora">
                         <label for="tarifa-hora">1 Hora</label><br>
 
-                        <input type="radio" id="tarifa-medio" name="modalidad" value="medio_dia">
+                        <input type="checkbox" id="tarifa-medio" name="modalidad" value="medio_dia">
                         <label for="tarifa-medio">Medio día (4 h)</label><br>
 
-                        <input type="radio" id="tarifa-completo" name="modalidad" value="dia_completo">
+                        <input type="checkbox" id="tarifa-completo" name="modalidad" value="dia_completo">
                         <label for="tarifa-completo">Día completo</label>
                     </p>
 
                     <p>
                         <label for="fecha">Fecha de reserva:</label><br>
-                        <input type="date" id="fecha" name="fecha_reserva" required>
+                        <input type="date" id="fecha" name="fecha_reserva" min="2026-11-01" max="2026-12-31" required>
                     </p>
                 </fieldset>
 
-                <!-- Grupo 3: Confirmación (Paso 2, 4) -->
                 <fieldset>
                     <legend>Confirmación</legend>
 
@@ -97,11 +93,10 @@
 
                     <p>
                         <label for="comentarios">Comentarios o solicitudes adicionales:</label><br>
-                        <textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea>
+                        <textarea id="comentarios" name="comentarios" rows="4" cols="40" max="300" placeholder="Escribe tu comentario (máximo 300 caracteres)"></textarea>
                     </p>
                 </fieldset>
 
-                <!-- Botón de envío (Paso 5) -->
                 <p>
                     <button type="submit" name="enviar_reserva">Confirmar reserva</button>
                 </p>
@@ -109,7 +104,6 @@
             </form>
         </section>
 
-        <!-- Contenido complementario / Horario de atención -->
         <aside>
             <h2>Horario de Atención</h2>
             <dl>
@@ -126,7 +120,6 @@
         
     </main>
 
-    <!-- Pie de página -->
     <footer>
         <p>&copy; 2026 Rueda Libre - Contacto: <a href="mailto:contacto@ecobicis.com">contacto@ecobicis.com</a></p>
     </footer>
