@@ -19,6 +19,29 @@ Codigo de estado: 304
  index.html ---> tarifas.html ---> paginas/tarifas
  index.html ---> rservas.html ---> paginas/reservas
  paginas/tarifas.index.htmlc---> ../index.html
+ 
+ Paso 1 y 2 (Organización de páginas y regiones):
+Empecé dibujando en borrador cómo iba a quedar estructurada cada página del sitio. Lo organicé para que cada una tuviera su cabecera arriba con el menú de navegación bien claro,
+ un bloque principal en el centro con la info de cada vista, y el pie de página abajo del todo. De esta manera, el diseño se mantiene ordenado y es fácil navegar entre el inicio,
+  las tarifas y la sección de reservas sin perdernos.
 
+Paso 3 y 4 (Secciones, artículos y apartados especiales):
+En la página de Inicio, metí cada tema principal en su propia sección. Además, como cada servicio de alquiler (el de bicis urbanas y el de montaña) tiene sentido por sí solo, los puse como artículos independientes.
+En la página de Tarifas, separé cada tabla en una sección distinta y saqué la lista de "qué llevar" a un bloque aparte (aside), porque funciona como un dato complementario útil para el usuario.
+ Hice exactamente lo mismo en la página de Reservas, donde puse el horario de atención en un bloque secundario para que resalte sin estorbar en el contenido principal.
+
+Paso 5 y 6 (Revisión de etiquetas):
+Repasé todo el código para quitar etiquetas genéricas que no aportaban nada y las cambié por sus equivalentes con significado real (como usar <nav> para el menú o <footer> para el cierre).
+ Los pocos contenedores genéricos que dejé fue únicamente por temas de diseño y acomodo visual. Al final, revisé que cada página conserve su contenido principal único, que los títulos sigan en orden y
+ que los enlaces de las tres páginas funcionen a la perfección antes de subir los cambios al repositorio.
+
+Lista desplegable (<select> para el tipo de bicicleta): Lo elegí porque tenemos tres opciones claras y fijas (urbana, montaña y eléctrica).
+ Esto ahorra espacio en la pantalla y evita que el usuario escriba mal el modelo.
+
+Opciones únicas (<input type="radio"> para la modalidad de tarifa): Los usé porque el cliente solo puede elegir una tarifa a la vez
+ (hora, medio día o día completo) y al ponerlos juntos con el mismo atributo name, se excluyen entre sí de forma automática.
+
+Área de texto (<textarea> para comentarios): Decidí incluirlo para que los usuarios tengan la libertad de escribir observaciones o requerimientos 
+especiales más largos que no caben en una simple línea de texto tradicional.
  
  
