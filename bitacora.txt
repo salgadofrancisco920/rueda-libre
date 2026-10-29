@@ -79,5 +79,16 @@ Naranja Pedal sobre Crema----Solo para títulos grandes o logotipos
 Blanco sobre Azul Noche----Ideal para encabezados y fondos oscuros
 
 
+Comprobación de Herencia en CSS
+Herramienta: DevTools de Microsoft Edge, pestañas Styles y Computed.
+
+ Propiedad que SÍ se hereda: color
+Lo que vi en el navegador: Cuando inspeccioné un texto dentro de un párrafo <p>, vi en la sección "Inherited from body" que la propiedad color venía directamente desde la etiqueta body.
+
+ Propiedad que NO se hereda: background-color
+Lo que vi en el navegador: En la pestaña Computed, vi que el background-color del párrafo decía transparent (transparente), en lugar de decir el color Crema que le puse al body.
+
+
+
  
  

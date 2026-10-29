@@ -1,0 +1,33 @@
+
+:root {
+
+  --color-primario: #1b4d3e;
+  --color-secundario: #e67e22;
+  --color-acento: #0f172a;
+  --color-fondo: #fdfbf7;
+  --color-texto: #5b6470;
+
+
+
+  --fuente-titulos: 'Montserrat', sans-serif;
+  --fuente-cuerpo: 'Open Sans', sans-serif;
+
+
+
+  --espacio-pequeño: 0.5rem; 
+  --espacio-mediano: 1rem;    
+  --espacio-grande: 2rem;
+}
+
+
+body {
+  font-family: var(--fuente-cuerpo);
+  background-color: var(--color-fondo); 
+  color: var(--color-texto);         
+  margin: 0;
+  padding: var(--espacio-md);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--fuente-titulos);
+  color: var(--color-titulos);        
