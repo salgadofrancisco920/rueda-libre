@@ -31,3 +31,50 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--fuente-titulos);
   color: var(--color-titulos);        
+}
+
+#menu  {
+  color: var(--gris-asfalto);
+  text-decoration: none;
+  padding: 8px 12px;
+}
+
+#menu a.active{
+  color: var(--color-primario);
+  font-weight: 600;
+  border-bottom: 2px solid var(--color-primario);
+}
+
+#menu :hover{
+  color: var(--color-secundario);
+}
+#menu :focus {
+  color: var(--color-texto);
+  outline: 2px solid var(--color-texto);
+  outline-offset: 4px;
+}
+
+
+.btn-cta {
+  display: inline-block;         
+  background-color: var(--color-primario); 
+  color: var(--color-fondo);           
+  padding: 10px 20px;             
+  border-radius: 6px;            
+  text-decoration: none;          
+  font-weight: bold;              
+  border: none;                   
+  cursor: pointer;                
+}
+
+
+.btn-cta:hover {
+  background-color: var(--color-secundario); 
+  color: var(--blanco);
+}
+
+
+.btn-cta:focus {
+  outline: 3px solid var(--color-fondo);
+  outline-offset: 2px;
+}

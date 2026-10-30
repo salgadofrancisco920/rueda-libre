@@ -89,6 +89,37 @@ Lo que vi en el navegador: Cuando inspeccioné un texto dentro de un párrafo <p
 Lo que vi en el navegador: En la pestaña Computed, vi que el background-color del párrafo decía transparent (transparente), en lugar de decir el color Crema que le puse al body.
 
 
+Registro para la Bitácora (Punto 2)
+
+Puedes adjuntar el siguiente texto explicativo en tu bitácora de desarrollo:
+
+    Registro de Especificidad:
+
+        Selector #menu a → Especificidad (1, 0, 1).   
+        PNG
+
+        Selector .activo → Especificidad (0, 1, 0).   
+        PNG
+
+    Causa del error: La regla .activo no se aplicaba porque la regla #menu a posee mayor peso por incluir un identificador ID.   
+    PNG
+
+    Solución aplicada: Se reestructuró la regla CSS como #menu a.activo con especificidad (1, 1, 1). Esto permite sobreescribir la regla base respetando la cascada y sin acudir al uso de !important ni estilos inline.   
+    PNG+ 1
+
+Verificación Final en DevTools (Punto 7)
+
+    Abre tu navegador y activa DevTools (F12 o Clic derecho → Inspeccionar).   
+    PNG
+
+    En la pestaña Styles, selecciona el enlace con la clase .activo para verificar que la regla #menu a.activo aplique correctamente y la regla #menu a quede tachada.   
+    PNG
+
+    Usa la herramienta :hov en la pestaña de estilos de DevTools para forzar los estados :hover y :focus en enlaces, botones y campos de formulario, asegurando la respuesta visual.   
+    PNG
+
+    Utiliza la tecla Tab para navegar secuencialmente por toda la página, comprobando que el contorno del foco sea visible en todo momento.   
+    PNG
 
  
  
