@@ -89,6 +89,15 @@ Lo que vi en el navegador: Cuando inspeccioné un texto dentro de un párrafo <p
 Lo que vi en el navegador: En la pestaña Computed, vi que el background-color del párrafo decía transparent (transparente), en lugar de decir el color Crema que le puse al body.
 
 
+Hoy estuve actualizando las tres páginas (index, tarifas y reservas) para marcar correctamente el menú activo y mejorar la experiencia de navegación.
+Me topé con el detalle de que una regla del CSS de un compañero (#menu) estaba bloqueando la clase activa por temas de especificidad. Lo resolví combinando ambos selectores en la hoja de estilos de forma limpia, sin tener que recurrir a !important.
+Por último, ajusté los estados de interacción (:hover y :focus) en los enlaces, los botones y los campos de los formularios para que al movernos con la tecla Tab el foco se vea siempre de forma clara.
 
+
+
+Medí con la pestaña Computed de DevTools la diferencia al cambiar cómo se calcula el tamaño de las tarjetas:
+Antes de aplicar box-sizing: border-box: El ancho total de la tarjeta era más grande de lo pensado porque sumaba el ancho fijo más el relleno y los bordes por separado, lo que hacía que las cosas se vieran apretadas o se salieran.
+Después de aplicar box-sizing: border-box: El ancho de la tarjeta se mantiene exacto, incluyendo adentro el relleno y los bordes sin deformar el diseño.
+Además, se centraron los contenidos de la página, se separaron los bloques con espacio visual, las tablas y el formulario quedaron ordenados y legibles, y las opciones del menú quedaron alineadas en una sola fila.
  
  

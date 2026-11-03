@@ -1,33 +1,205 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
 :root {
-
   --color-primario: #1b4d3e;
   --color-secundario: #e67e22;
   --color-acento: #0f172a;
   --color-fondo: #fdfbf7;
   --color-texto: #5b6470;
-
-
+  --color-blanco: #ffffff;
+  
+  --gris-asfalto: #5b6470;
+  --verde-ruta: #1b4d3e;
+  --color-foco: #e67e22;
 
   --fuente-titulos: 'Montserrat', sans-serif;
   --fuente-cuerpo: 'Open Sans', sans-serif;
 
-
-
-  --espacio-pequeño: 0.5rem; 
-  --espacio-mediano: 1rem;    
-  --espacio-grande: 2rem;
+  --espacio-xs: 0.5rem; 
+  --espacio-sm: 1rem;    
+  --espacio-md: 1.5rem;
+  --espacio-lg: 2rem;
+  --espacio-xl: 3rem;
 }
-
 
 body {
   font-family: var(--fuente-cuerpo);
   background-color: var(--color-fondo); 
   color: var(--color-texto);         
   margin: 0;
-  padding: var(--espacio-md);
+  padding: 0;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: var(--espacio-lg);
+}
+
+header {
+  background-color: var(--color-blanco);
+  border-bottom: 1px solid #ddd;
+  padding: var(--espacio-md) var(--espacio-lg);
+}
+
+.portada-inicio, 
+header.hero {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--fuente-titulos);
-  color: var(--color-titulos);        
+  color: var(--color-primario);
+}
+
+nav ul#menu {
+  list-style: none;
+  padding: 0;
+  margin: var(--espacio-sm) 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espacio-md);
+}
+
+#menu a {
+  color: var(--gris-asfalto);
+  text-decoration: none;
+  padding: var(--espacio-xs) var(--espacio-sm);
+  transition: color 0.2s ease;
+  display: inline-block;
+}
+
+#menu a.activo {
+  color: var(--verde-ruta);
+  font-weight: 600;
+}
+
+#menu a:hover,
+#menu a:focus {
+  color: var(--color-secundario);
+  outline: 2px solid var(--color-foco);
+  outline-offset: 2px;
+}
+
+section article, 
+.tarjeta-servicio {
+  background-color: var(--color-blanco);
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: var(--espacio-md);
+  margin-bottom: var(--espacio-lg);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+section article img,
+.tarjeta-servicio img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-top: var(--espacio-xs);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--espacio-md) 0;
+  background-color: var(--color-blanco);
+}
+
+th, td {
+  padding: var(--espacio-sm) var(--espacio-md);
+  text-align: left;
+  border: 1px solid #cbd5e1;
+}
+
+th {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  font-family: var(--fuente-titulos);
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+form {
+  background-color: var(--color-blanco);
+  padding: var(--espacio-lg);
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+fieldset {
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: var(--espacio-md);
+  margin-bottom: var(--espacio-lg);
+}
+
+legend {
+  font-family: var(--fuente-titulos);
+  font-weight: 600;
+  color: var(--color-primario);
+  padding: 0 var(--espacio-xs);
+}
+
+form p {
+  margin-bottom: var(--espacio-md);
+}
+
+form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: var(--espacio-xs);
+  color: var(--color-acento);
+}
+
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--gris-asfalto);
+  padding: var(--espacio-sm);
+  border-radius: 4px;
+  font-family: var(--fuente-cuerpo);
+  background-color: #fff;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid var(--color-foco);
+  outline-offset: 1px;
+  border-color: var(--color-secundario);
+}
+
+button, 
+input[type="submit"],
+.btn-accion {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  padding: var(--espacio-sm) var(--espacio-lg);
+  border: none;
+  border-radius: 6px;
+  font-family: var(--fuente-cuerpo);
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+button:hover, 
+input[type="submit"]:hover,
+.btn-accion:hover,
+button:focus, 
+input[type="submit"]:focus,
+.btn-accion:focus {
+  background-color: var(--color-secundario);
+}
