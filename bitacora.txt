@@ -100,4 +100,20 @@ Antes de aplicar box-sizing: border-box: El ancho total de la tarjeta era más g
 Después de aplicar box-sizing: border-box: El ancho de la tarjeta se mantiene exacto, incluyendo adentro el relleno y los bordes sin deformar el diseño.
 Además, se centraron los contenidos de la página, se separaron los bloques con espacio visual, las tablas y el formulario quedaron ordenados y legibles, y las opciones del menú quedaron alineadas en una sola fila.
  
- 
+
+
+ ----Cierre de la Versión 1.0---Lanzamiento
+Llegamos al final de la semana con el sitio listo en este último tramo trabajé en los detalles finales de posicionamiento:
+
+Etiqueta flotante "Nuevo": La coloqué en la esquina de la tarjeta de bicicletas eléctricas usando posicionamiento absoluto,
+ logrando que se ubique exactamente donde queríamos sin mover ni afectar el resto del texto de la tarjeta.
+
+Canal de atención WhatsApp: Añadí un botón flotante en la esquina inferior derecha con posición fija en todas las páginas,
+ asegurándome de que esté siempre a la vista al navegar pero sin estorbar el contenido del pie de página.
+
+Organización general: Limpié y agrupé todo el CSS por secciones claras con comentarios,
+ revisé que no hubiera enlaces rotos y confirmé que la navegación por teclado funciona a la perfección.
+
+
+Reflexión y mejoras futuras: Lo que construí esta semana dejó la base sólida del proyecto Rueda Libre.
+ Como mejora a futuro, más adelante se podría implementar un diseño adaptable o más avanzado para teléfonos móviles.
