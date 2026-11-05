@@ -50,22 +50,19 @@ header {
   background-color: var(--color-blanco);
   border-bottom: 1px solid #ddd;
   padding: var(--espacio-md) var(--espacio-lg);
-}
-
-.portada-inicio, 
-header.hero {
-  min-height: 50vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav ul#menu {
   list-style: none;
   padding: 0;
-  margin: var(--espacio-sm) 0 0 0;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: var(--espacio-md);
 }
 
@@ -74,7 +71,7 @@ nav ul#menu {
   text-decoration: none;
   padding: var(--espacio-xs) var(--espacio-sm);
   transition: color 0.2s ease;
-  display: inline-block;
+  display: block;
 }
 
 #menu a.activo {
@@ -87,6 +84,57 @@ nav ul#menu {
   color: var(--color-secundario);
   outline: 2px solid var(--color-foco);
   outline-offset: 2px;
+}
+
+.portada-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--espacio-lg);
+  align-items: center;
+  margin-bottom: var(--espacio-lg);
+}
+
+.portada-imagen img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.galeria-rutas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--espacio-md);
+  margin-top: var(--espacio-md);
+}
+
+.tarjeta-ruta {
+  background-color: var(--color-blanco);
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: var(--espacio-md);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.tarjeta-ruta img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: var(--espacio-xs);
+}
+
+.main-reservas {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--espacio-lg);
+}
+
+.fila-campos {
+  display: flex;
+  gap: var(--espacio-md);
+}
+
+.fila-campos p {
+  flex: 1;
 }
 
 section article, 
@@ -133,15 +181,6 @@ section article img,
   font-weight: 700;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   z-index: 1000;
-  transition: background-color 0.2s ease, transform 0.2s ease;
-}
-
-.btn-whatsapp:hover,
-.btn-whatsapp:focus {
-  background-color: #128c7e;
-  transform: scale(1.05);
-  outline: 3px solid var(--color-acento);
-  outline-offset: 2px;
 }
 
 table {
@@ -211,14 +250,6 @@ textarea {
   background-color: #fff;
 }
 
-input:focus,
-select:focus,
-textarea:focus {
-  outline: 3px solid var(--color-foco);
-  outline-offset: 1px;
-  border-color: var(--color-secundario);
-}
-
 button, 
 input[type="submit"],
 .btn-accion {
@@ -234,14 +265,32 @@ input[type="submit"],
   display: inline-block;
 }
 
-button:hover, 
-input[type="submit"]:hover,
-.btn-accion:hover,
-button:focus, 
-input[type="submit"]:focus,
-.btn-accion:focus {
-  background-color: var(--color-secundario);
-  outline: 2px solid var(--color-acento);
-  outline-offset: 2px;
+footer {
+  background-color: var(--color-blanco);
+  border-top: 1px solid #ddd;
+  padding: var(--espacio-md) var(--espacio-lg);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--espacio-md);
 }
 
+.contenedor-flota {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--espacio-md);
+  margin-top: var(--espacio-md);
+}
+
+.tarjeta-flota {
+  background-color: var(--color-blanco);
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: var(--espacio-md);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

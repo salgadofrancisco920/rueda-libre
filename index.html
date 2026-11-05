@@ -23,16 +23,81 @@
     </header>
  
     <main>
-        <section>
-            <img src="assets/gif/guisaso.gif" alt="Portada de la tienda de alquiler de bicicletas Rueda Libre" width="400" height="250">
-            <h2>¿Quienes somos?</h2>
-            <p>
-                Somos un grupo de personas apasionados por las bicicletas que se dedica al alquiler de bicicletas para andar por la ciudad de manera dinamica y divertida. 
-                Puedes consultar directamente nuestra informacion de contacto e instalacion en la seccion 
-                <a href="#encuentranos">Encuentranos</a>.
-            </p>
+        <section class="portada-grid">
+            <div class="portada-texto">
+                <h2>Quienes somos</h2>
+                <p>
+                    Somos un grupo de personas apasionados por las bicicletas que se dedica al alquiler de bicicletas para andar por la ciudad de manera dinamica y divertida. 
+                    Puedes consultar nuestra informacion de contacto en la seccion 
+                    <a href="#encuentranos">Encuentranos</a>.
+                </p>
+            </div>
+            <div class="portada-imagen">
+                <img src="assets/gif/guisaso.gif" alt="Portada de la tienda de alquiler de bicicletas Rueda Libre" width="400" height="250">
+            </div>
         </section>
- 
+
+        <section>
+            <h2>Nuestra flota</h2>
+            <div class="contenedor-flota">
+                <article class="tarjeta-flota">
+                    <img src="assets/img/urbana-clasica.jpg" alt="Urbana Clasica">
+                    <h3>Urbana Clasica</h3>
+                    <p>Comoda y liviana para las ciclorrutas.</p>
+                    <p class="precio">$10.000 / hora</p>
+                    <a href="paginas/reservas.html" class="btn-accion">Reservar</a>
+                </article>
+
+                <article class="tarjeta-flota">
+                    <img src="assets/img/urbana-plegable.jpg" alt="Urbana Plegable">
+                    <h3>Urbana Plegable</h3>
+                    <p>Se dobla en segundos; Ideal para combinar con el metro.</p>
+                    <p class="precio">$12.000 / hora</p>
+                    <a href="paginas/reservas.html" class="btn-accion">Reservar</a>
+                </article>
+
+                <article class="tarjeta-flota">
+                    <img src="assets/img/montaña-trail.jpg" alt="Montana Trail">
+                    <h3>Montana Trail</h3>
+                    <p>Suspension delantera y 21 cambios para las subidas.</p>
+                    <p class="precio">$15.000 / hora</p>
+                    <a href="paginas/reservas.html" class="btn-accion">Reservar</a>
+                </article>
+
+                <article class="tarjeta-flota">
+                    <img src="assets/img/gravel-aventura.jpg" alt="Gravel Aventura">
+                    <h3>Gravel Aventura</h3>
+                    <p>Para rutas mixtas de asfalto y destapado.</p>
+                    <p class="precio">$18.000 / hora</p>
+                    <a href="paginas/reservas.html" class="btn-accion">Reservar</a>
+                </article>
+
+                <article class="tarjeta-flota">
+                    <img src="assets/img/electrica-urbana.png" alt="Electrica Urbana">
+                    <h3>Electrica Urbana</h3>
+                    <p>Asistencia electrica con 45 km de autonomia.</p>
+                    <p class="precio">$25.000 / hora</p>
+                    <a href="paginas/reservas.html" class="btn-accion">Reservar</a>
+                </article>
+
+                <article class="tarjeta-flota">
+                    <img src="assets/img/infantil.jpg" alt="Infantil">
+                    <h3>Infantil</h3>
+                    <p>Para ninos de 6 a 10 anos.</p>
+                    <p class="precio">$8.000 / hora</p>
+                    <a href="paginas/reservas.html" class="btn-accion">Reservar</a>
+                </article>
+
+                <article class="tarjeta-flota">
+                    <img src="assets/img/tandem.jpg" alt="Tandem">
+                    <h3>Tandem</h3>
+                    <p>Para dos personas; perfecta para pasear en pareja.</p>
+                    <p class="precio">$20.000 / hora</p>
+                    <a href="paginas/reservas.html" class="btn-accion">Reservar</a>
+                </article>
+            </div>
+        </section>
+
         <section>
             <h2>Nuestros servicios</h2>
             
@@ -45,7 +110,7 @@
             </article>
 
             <article class="tarjeta-servicio">
-                <h3>Alquiler de Bicicletas de Montaña</h3>
+                <h3>Alquiler de Bicicletas de Montana</h3>
                 <p>
                     La mejor opcion para los amantes de la naturaleza. 
                     <strong>Incluye kit de reparacion y suspension ajustable</strong>, <em>brindando maximo confort en terrenos irregulares</em>.
@@ -53,21 +118,37 @@
             </article>
             <article class="tarjeta-servicio">
                 <span class="etiqueta-nuevo">Nuevo</span>
-                <h3>Alquiler de Bicicletas Eléctricas</h3>
+                <h3>Alquiler de Bicicletas Electricas</h3>
                 <p>
-                    La última tecnología para rodar sin esfuerzo por toda la ciudad. 
-                    <strong>Incluye batería recargable y asistencia de pedaleo</strong> para que llegues más lejos.
+                    La ultima tecnologia para rodar sin esfuerzo por toda la ciudad. 
+                    <strong>Incluye bateria recargable y asistencia de pedaleo</strong> para que llegues mas lejos.
                 </p>
             </article>
         </section>
 
         <section>
-            <h2>Bicicletas y Rutas</h2>
-       <img src="assets/img/ciclas2.jpg" alt="Bicicleta de montaña lista para alquilar" width="300" height="150">
-       <img src="assets/img/ciclas3.jpg" alt="Bicicleta eléctrica moderna lista para alquilar" width="300" height="150">
+            <h2>Rutas</h2>
+            <div class="galeria-rutas">
+                <article class="tarjeta-ruta">
+                    <img src="assets/img/ruta1.png" alt="Rio y Parques">
+                    <h3>Rio y Parques</h3>
+                    <p>Nivel: Facil</p>
+                </article>
+                <article class="tarjeta-ruta">
+                    <img src="assets/img/ruta2.png" alt="Sabores de Barrio">
+                    <h3>Sabores de Barrio</h3>
+                    <p>Nivel: Medio</p>
+                </article>
+                <article class="tarjeta-ruta">
+                    <img src="assets/img/ruta3.png" alt="Reto Las Palmas">
+                    <h3>Reto Las Palmas</h3>
+                    <p>Nivel: Dificil</p>
+                </article>
+            </div>
+        </section>
+
         <section>
-            <h2>¿Como alquilar?</h2>
-            
+            <h2>Como alquilar</h2>
             <article>
                 <h3>Pasos para el alquiler</h3>
                 <ol>
@@ -77,29 +158,14 @@
                     <li>¡Recibe tu bicicleta con todo el equipamiento y disfruta del recorrido!</li>
                 </ol>
             </article>
-
-            <article>
-                <h3>Beneficios de nuestro servicio</h3>
-                <ul>
-                    <li>Mantenimiento tecnico garantizado en cada unidad.</li>
-                    <li>Equipamiento de seguridad incluido sin costo adicional.</li>
-                    <li>Asistencia y soporte durante todo tu periodo de alquiler.</li>
-                </ul>
-            </article>
         </section>
    
         <section>
             <h2 id="encuentranos">Encuentranos</h2>
-            <p>
-                Visitanos en nuestra sede principal o contactanos directamente:
-            </p>
+            <p>Visitanos en nuestra sede principal o contactanos directamente:</p>
             <ul>
-                <li>
-                    Ubicacion: <a href="https://maps.app.goo.gl/cF8yKqPXdWNH8MLT6" target="_blank">Ver ubicacion en Google Maps</a>
-                </li>
-                <li>
-                    Correo electronico: <a href="mailto:hola@ruedalibre.444">hola@ruedalibre.444</a>
-                </li>
+                <li>Ubicacion: <a href="https://maps.app.goo.gl/cF8yKqPXdWNH8MLT6" target="_blank">Ver ubicacion en Google Maps</a></li>
+                <li>Correo electronico: <a href="mailto:hola@ruedalibre.444">hola@ruedalibre.444</a></li>
             </ul>
         </section>
     </main>

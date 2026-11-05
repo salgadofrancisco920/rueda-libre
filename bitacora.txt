@@ -117,3 +117,19 @@ Organización general: Limpié y agrupé todo el CSS por secciones claras con co
 
 Reflexión y mejoras futuras: Lo que construí esta semana dejó la base sólida del proyecto Rueda Libre.
  Como mejora a futuro, más adelante se podría implementar un diseño adaptable o más avanzado para teléfonos móviles.
+
+
+Dia 1 Semana 2
+ Al estrechar la ventana del navegador, el titulo y el menu del encabezado se acomodan uno debajo del otro de manera ordenada en lugar de amontonarse.
+  En el pie de pagina, los elementos tambien se ajustan automaticamente para verse bien en pantallas pequenas.
+
+  
+  A 1280 px se ven 3 o 4 columnas dependiendo del espacio, a 900 px se ven 2 columnas y a 500 px se ve 1 sola columna adaptandose de forma automatica con grid.
+
+
+  Portada: Grid, porque organiza el texto y la imagen en dos columnas.
+   Galeria de rutas: Grid, porque acomoda las tres tarjetas en una sola fila.
+   Reservas: Grid, porque divide la pagina en dos partes formulario e informacion con proporcion 2:1.
+   Fila del formulario: Flexbox, porque ubica dos campos juntos en una misma linea horizontal. 
+   Encabezado: Flexbox, porque pone el titulo a un lado y el menu al otro en una sola linea.
+   Pie de pagina: Flexbox, porque ordena los bloques de contacto de forma horizontal en una sola fila.   
