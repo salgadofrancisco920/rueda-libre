@@ -144,3 +144,11 @@ Solucion: Se ajusto con flex-direction: column para que el nombre quede arriba y
 Imagenes rebasando contenedores:
 Problema: Algunas imagenes de la flota y las rutas conservaban su tamano original y descuadraban la vista vertical.
 Solucion: Se aplico una regla global con max-width: 100% y height: auto para asegurar que todas las imagenes se adapten de forma fluida a cualquier pantalla.
+
+
+Tiempo invertido: ~10 minutos construyendo la vista con Bootstrap frente al diseño hecho a mano en CSS nativo.
+Lineas de codigo de distribucion:
+Version CSS propio: Mas de 25 lineas combinando flexbox, media queries (min-width: 768px / 1200px) y selectores de grilla personalizados.
+Version Bootstrap 5: Cero lineas de CSS propio; toda la logica de columnas se resolvio unicamente empleando clases utilitarias del framework (row, g-3, col-12, col-sm-6, col-lg-4, col-xl-3).
+Que te dio Bootstrap sin esfuerzo: La adaptabilidad automatica de los breakpoints (sm, lg, xl) y los espacios entre tarjetas (gutters) sin tener que calcular porcentajes ni escribir media queries a mano.
+Que control perdiste: Se depende totalmente de la estructura de clases predefinidas de Bootstrap y personalizar detalles finos de diseño o tipografias exige sobreescribir variables o lidiar con especificidad de clases externas.
