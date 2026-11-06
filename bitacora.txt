@@ -175,3 +175,10 @@ Al revisar el archivo generado src/output.css tras compilar con la CLI, comprob�
 Bordes y formas: Se unificó el uso de rounded-2xl para tarjetas y contenedores principales, y rounded-xl para elementos internos como botones, inputs y alertas, logrando una línea visual coherente.
 Espaciado: Se utilizaron rellenos consistentes (p-6 en contenedores y p-4 en componentes secundarios) junto con separaciones verticales (space-y-4) para mantener orden y jerarquía.
 Colores: Se mantuvo la paleta base de tonos slate para el fondo y tarjetas, destacando las acciones principales con verde esmeralda (emerald-500) y usando colores de apoyo (ámbar y celeste) para diferenciar las alertas.
+
+
+
+Etiquetas Semánticas: Se implementó <header> para la barra superior, <main> para envolver el contenido dinámico, <section> para cada bloque con sus respectivos id (hero, rutas, como-funciona, inscripcion) para garantizar el funcionamiento de las anclas, y <footer> para el cierre.
+Contenedor Unificado: Para mantener consistencia en la alineación horizontal sin romper franjas de ancho completo en el fondo, se aplicó exactamente el mismo patrón en todas las secciones: max-w-7xl mx-auto px-4.
+Distribución de Pasos ("¿Cómo funciona?"): Se eligió CSS Grid (grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6). La razón es que al tratarse de 4 pasos continuos con una estructura uniforme, Grid permite un control de layout más estricto en pantallas de escritorio sin sufrir desalineaciones por variaciones en la cantidad de texto de cada tarjeta, además de adaptarse fluidamente de 1 a 2 y luego a 4 columnas mediante breakpoints responsive (sm y lg).
+Respeto al Kit: Cada botón, tarjeta, alerta y campo de formulario incluye exactamente la sintaxis de clases provista en componentes.html sin alterar estilos ni nombres.

@@ -3,126 +3,283 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kit de Componentes - Rueda Libre</title>
+  <title>Rueda Libre - Landing Page</title>
   <link rel="stylesheet" href="src/output.css">
 </head>
-<body class="bg-slate-900 text-slate-100 min-h-screen py-10 px-4">
+<body class="bg-slate-900 text-slate-100 min-h-screen">
 
-  <div class="max-w-xl mx-auto space-y-10">
+  <header class="border-b border-slate-800 bg-slate-900 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center space-x-2">
+        <span class="text-2xl font-black text-emerald-400 tracking-wider uppercase">Rueda Libre</span>
+      </div>
 
-    <header class="border-b border-slate-800 pb-4">
-      <h1 class="text-3xl font-bold text-white tracking-tight">Kit de Componentes</h1>
-      <p class="text-slate-400 text-sm mt-1">Biblioteca visual de UI para el proyecto Rueda Libre.</p>
-    </header>
+      <nav class="flex flex-wrap items-center justify-center gap-6 text-sm font-semibold text-slate-300">
+        <a href="#rutas" class="hover:text-emerald-400 transition-colors">Rutas</a>
+        <a href="#como-funciona" class="hover:text-emerald-400 transition-colors">¿Cómo funciona?</a>
+        <a href="#inscripcion" class="hover:text-emerald-400 transition-colors">Inscripción</a>
+      </nav>
 
-    <section class="space-y-4">
-      <h2 class="text-lg font-semibold text-slate-300">1. Botones</h2>
-      <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 space-y-3">
-        <a href="#" class="block w-full text-center bg-emerald-500 text-slate-950 font-bold px-6 py-3 rounded-xl hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-slate-800 transition-colors uppercase tracking-wider text-sm shadow-lg">
+      <div>
+        <a href="#inscripcion" class="inline-block bg-emerald-500 text-slate-950 font-bold px-6 py-3 rounded-xl hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-slate-800 transition-colors uppercase tracking-wider text-sm shadow-lg">
           Inscríbete
         </a>
-
-        <a href="#" class="block w-full text-center bg-slate-700 text-slate-200 font-bold px-6 py-3 rounded-xl hover:bg-slate-600 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-800 transition-colors uppercase tracking-wider text-sm">
-          Más Información
-        </a>
-
-        <a href="#" class="block w-full text-center bg-transparent text-emerald-400 border border-emerald-500/50 font-bold px-6 py-3 rounded-xl hover:bg-emerald-500/10 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-slate-800 transition-colors uppercase tracking-wider text-sm">
-          Ver Rutas
-        </a>
       </div>
-    </section>
+    </div>
+  </header>
 
-    <section class="space-y-4">
-      <h2 class="text-lg font-semibold text-slate-300">2. Tarjeta de Ruta</h2>
-      <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-lg hover:shadow-2xl hover:border-slate-500 transition-all duration-300 space-y-4 p-6">
-        <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=800&q=80" alt="Luces del Centro" class="w-full h-48 object-cover rounded-xl">
-        <div class="flex flex-wrap items-center justify-between gap-2">
-          <span class="inline-block bg-emerald-500/10 text-emerald-400 font-semibold text-xs tracking-wider uppercase px-3 py-1 rounded-full border border-emerald-500/20">
-            Nivel: Fácil
-          </span>
-          <span class="text-xs text-slate-400 uppercase tracking-wider">Punto de encuentro: Sede</span>
+  <main class="space-y-16 py-12">
+
+    <section id="hero">
+      <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+        <div class="space-y-6">
+          <h1 class="text-4xl md:text-5xl font-black text-white tracking-tight leading-tight">
+            Descubre la ciudad sobre dos ruedas
+          </h1>
+          <p class="text-slate-400 text-base md:text-lg">
+            Únete a nuestras rodadas urbanas y nocturnas. Elige tu ruta ideal, conoce gente apasionada por el ciclismo y vive una experiencia segura e inolvidable.
+          </p>
+          <div class="flex flex-wrap gap-4 pt-2">
+            <a href="#inscripcion" class="inline-block bg-emerald-500 text-slate-950 font-bold px-6 py-3 rounded-xl hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-slate-800 transition-colors uppercase tracking-wider text-sm shadow-lg">
+              Inscríbete
+            </a>
+            <a href="#rutas" class="inline-block bg-transparent text-emerald-400 border border-emerald-500/50 font-bold px-6 py-3 rounded-xl hover:bg-emerald-500/10 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-slate-800 transition-colors uppercase tracking-wider text-sm">
+              Ver Rutas
+            </a>
+          </div>
         </div>
+
         <div>
-          <h3 class="text-xl font-bold text-white tracking-tight">Luces del Centro</h3>
-        </div>
-        <div class="grid grid-cols-2 gap-4 border-y border-slate-700/60 py-4">
-          <div>
-            <p class="text-xs uppercase tracking-wider text-slate-400">Distancia</p>
-            <p class="text-base font-semibold text-slate-200">10 km</p>
-          </div>
-          <div>
-            <p class="text-xs uppercase tracking-wider text-slate-400">Duración</p>
-            <p class="text-base font-semibold text-slate-200">2 h</p>
-          </div>
-        </div>
-        <div class="flex items-center justify-between gap-4 pt-2">
-          <div class="shrink-0">
-            <p class="text-xs uppercase tracking-wider text-slate-400">Precio</p>
-            <p class="text-xl font-bold text-emerald-400">$55.000</p>
-          </div>
-          <a href="#" class="inline-block bg-emerald-500 text-slate-950 font-bold px-6 py-3 rounded-xl hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-slate-800 transition-colors uppercase tracking-wider text-sm shadow-lg text-center">
-            Inscríbete
-          </a>
+          <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=800&q=80" alt="Grupo de ciclistas" class="w-full h-80 md:h-96 object-cover rounded-2xl border border-slate-700 shadow-xl">
         </div>
       </div>
     </section>
 
-    <section class="space-y-4">
-      <h2 class="text-lg font-semibold text-slate-300">3. Alertas</h2>
-      <div class="space-y-3">
-        <div class="bg-sky-500/10 border-l-4 border-sky-500 p-4 rounded-xl text-sky-200">
-          <h4 class="font-bold text-sky-400 text-sm">Información</h4>
-          <p class="text-xs mt-1 text-sky-200/90">Las salidas nocturnas requieren llevar luz blanca delantera y luz roja trasera en la bicicleta.</p>
+    <section id="rutas" class="scroll-mt-24">
+      <div class="max-w-7xl mx-auto px-4 space-y-8">
+        <div class="text-center space-y-2 max-w-2xl mx-auto">
+          <h2 class="text-3xl font-bold text-white tracking-tight">Nuestras Rutas</h2>
+          <p class="text-slate-400 text-sm">Elige el recorrido que mejor se adapte a tu nivel y ritmo.</p>
         </div>
 
-        <div role="status" class="bg-emerald-500/10 border-l-4 border-emerald-500 p-4 rounded-xl text-emerald-200">
-          <h4 class="font-bold text-emerald-400 text-sm">¡Registro completado!</h4>
-          <p class="text-xs mt-1 text-emerald-200/90">Tu cupo para la Rueda Nocturna ha sido reservado con éxito. Te enviamos los detalles al correo.</p>
-        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-lg hover:shadow-2xl hover:border-slate-500 transition-all duration-300 space-y-4 p-6">
+            <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=800&q=80" alt="Luces del Centro" class="w-full h-48 object-cover rounded-xl">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <span class="inline-block bg-emerald-500/10 text-emerald-400 font-semibold text-xs tracking-wider uppercase px-3 py-1 rounded-full border border-emerald-500/20">
+                Nivel: Fácil
+              </span>
+              <span class="text-xs text-slate-400 uppercase tracking-wider">Punto de encuentro: Sede</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-white tracking-tight">Luces del Centro</h3>
+            </div>
+            <div class="grid grid-cols-2 gap-4 border-y border-slate-700/60 py-4">
+              <div>
+                <p class="text-xs uppercase tracking-wider text-slate-400">Distancia</p>
+                <p class="text-base font-semibold text-slate-200">10 km</p>
+              </div>
+              <div>
+                <p class="text-xs uppercase tracking-wider text-slate-400">Duración</p>
+                <p class="text-base font-semibold text-slate-200">2 h</p>
+              </div>
+            </div>
+            <div class="flex items-center justify-between gap-4 pt-2">
+              <div class="shrink-0">
+                <p class="text-xs uppercase tracking-wider text-slate-400">Precio</p>
+                <p class="text-xl font-bold text-emerald-400">$55.000</p>
+              </div>
+              <a href="#inscripcion" class="inline-block bg-emerald-500 text-slate-950 font-bold px-6 py-3 rounded-xl hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-slate-800 transition-colors uppercase tracking-wider text-sm shadow-lg text-center">
+                Inscríbete
+              </a>
+            </div>
+          </div>
 
-        <div class="bg-amber-500/10 border-l-4 border-amber-500 p-4 rounded-xl text-amber-200">
-          <h4 class="font-bold text-amber-400 text-sm">Cupos limitados</h4>
-          <p class="text-xs mt-1 text-amber-200/90">Quedan únicamente 4 cupos disponibles para la ruta Luna en Las Palmas este jueves.</p>
+          <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-lg hover:shadow-2xl hover:border-slate-500 transition-all duration-300 space-y-4 p-6">
+            <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80" alt="Luna en Las Palmas" class="w-full h-48 object-cover rounded-xl">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <span class="inline-block bg-emerald-500/10 text-emerald-400 font-semibold text-xs tracking-wider uppercase px-3 py-1 rounded-full border border-emerald-500/20">
+                Nivel: Intermedio
+              </span>
+              <span class="text-xs text-slate-400 uppercase tracking-wider">Punto de encuentro: Parque</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-white tracking-tight">Luna en Las Palmas</h3>
+            </div>
+            <div class="grid grid-cols-2 gap-4 border-y border-slate-700/60 py-4">
+              <div>
+                <p class="text-xs uppercase tracking-wider text-slate-400">Distancia</p>
+                <p class="text-base font-semibold text-slate-200">18 km</p>
+              </div>
+              <div>
+                <p class="text-xs uppercase tracking-wider text-slate-400">Duración</p>
+                <p class="text-base font-semibold text-slate-200">3 h</p>
+              </div>
+            </div>
+            <div class="flex items-center justify-between gap-4 pt-2">
+              <div class="shrink-0">
+                <p class="text-xs uppercase tracking-wider text-slate-400">Precio</p>
+                <p class="text-xl font-bold text-emerald-400">$65.000</p>
+              </div>
+              <a href="#inscripcion" class="inline-block bg-emerald-500 text-slate-950 font-bold px-6 py-3 rounded-xl hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-slate-800 transition-colors uppercase tracking-wider text-sm shadow-lg text-center">
+                Inscríbete
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-lg hover:shadow-2xl hover:border-slate-500 transition-all duration-300 space-y-4 p-6">
+            <img src="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=800&q=80" alt="Circuito del Valle" class="w-full h-48 object-cover rounded-xl">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <span class="inline-block bg-emerald-500/10 text-emerald-400 font-semibold text-xs tracking-wider uppercase px-3 py-1 rounded-full border border-emerald-500/20">
+                Nivel: Avanzado
+              </span>
+              <span class="text-xs text-slate-400 uppercase tracking-wider">Punto de encuentro: Norte</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-white tracking-tight">Circuito del Valle</h3>
+            </div>
+            <div class="grid grid-cols-2 gap-4 border-y border-slate-700/60 py-4">
+              <div>
+                <p class="text-xs uppercase tracking-wider text-slate-400">Distancia</p>
+                <p class="text-base font-semibold text-slate-200">30 km</p>
+              </div>
+              <div>
+                <p class="text-xs uppercase tracking-wider text-slate-400">Duración</p>
+                <p class="text-base font-semibold text-slate-200">4 h</p>
+              </div>
+            </div>
+            <div class="flex items-center justify-between gap-4 pt-2">
+              <div class="shrink-0">
+                <p class="text-xs uppercase tracking-wider text-slate-400">Precio</p>
+                <p class="text-xl font-bold text-emerald-400">$80.000</p>
+              </div>
+              <a href="#inscripcion" class="inline-block bg-emerald-500 text-slate-950 font-bold px-6 py-3 rounded-xl hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-slate-800 transition-colors uppercase tracking-wider text-sm shadow-lg text-center">
+                Inscríbete
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <section class="space-y-4">
-      <h2 class="text-lg font-semibold text-slate-300">4. Formulario</h2>
-      <form class="bg-slate-800 p-6 rounded-2xl border border-slate-700 space-y-5" aria-label="Formulario de contacto">
+    <section id="como-funciona" class="scroll-mt-24">
+      <div class="max-w-7xl mx-auto px-4 space-y-8">
+        <div class="text-center space-y-2 max-w-2xl mx-auto">
+          <h2 class="text-3xl font-bold text-white tracking-tight">¿Cómo funciona?</h2>
+          <p class="text-slate-400 text-sm">Sigue estos cuatro sencillos pasos para unirte a la experiencia.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 space-y-3">
+            <span class="text-3xl font-black text-emerald-400">01</span>
+            <h3 class="text-lg font-bold text-white">Elige tu ruta</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Revisa los niveles, distancias y horarios disponibles para seleccionar la ruta que prefieras.</p>
+          </div>
+
+          <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 space-y-3">
+            <span class="text-3xl font-black text-emerald-400">02</span>
+            <h3 class="text-lg font-bold text-white">Inscríbete</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Diligencia el formulario de registro con tus datos de contacto para apartar tu cupo.</p>
+          </div>
+
+          <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 space-y-3">
+            <span class="text-3xl font-black text-emerald-400">03</span>
+            <h3 class="text-lg font-bold text-white">Recoge tu equipo</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Preséntate en el punto de encuentro asignado para reclamar tu kit de seguridad.</p>
+          </div>
+
+          <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 space-y-3">
+            <span class="text-3xl font-black text-emerald-400">04</span>
+            <h3 class="text-lg font-bold text-white">Y rueda</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Prepárate para disfrutar del trayecto con el acompañamiento de nuestros guías.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="inscripcion" class="scroll-mt-24">
+      <div class="max-w-7xl mx-auto px-4 space-y-6">
         
-        <div class="space-y-1.5">
-          <label for="email" class="block text-xs font-semibold uppercase tracking-wider text-slate-300">
-            Correo Electrónico
-          </label>
-          <input 
-            type="email" 
-            id="email" 
-            name="email" 
-            placeholder="ejemplo@correo.com"
-            class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:border-transparent transition-all text-sm"
-          >
-          <p class="text-xs text-slate-400">Te enviaremos la confirmación y la guía digital a este correo.</p>
+        <div class="space-y-3 max-w-xl mx-auto">
+          <div class="bg-sky-500/10 border-l-4 border-sky-500 p-4 rounded-xl text-sky-200">
+            <h4 class="font-bold text-sky-400 text-sm">Información</h4>
+            <p class="text-xs mt-1 text-sky-200/90">Las salidas nocturnas requieren llevar luz blanca delantera y luz roja trasera en la bicicleta.</p>
+          </div>
+
+          <div class="bg-amber-500/10 border-l-4 border-amber-500 p-4 rounded-xl text-amber-200">
+            <h4 class="font-bold text-amber-400 text-sm">Cupos limitados</h4>
+            <p class="text-xs mt-1 text-amber-200/90">Quedan únicamente 4 cupos disponibles para la ruta Luna en Las Palmas este jueves.</p>
+          </div>
         </div>
 
-        <div class="space-y-1.5">
-          <label for="phone" class="block text-xs font-semibold uppercase tracking-wider text-slate-300">
-            Teléfono Celular
-          </label>
-          <input 
-            type="tel" 
-            id="phone" 
-            name="phone" 
-            placeholder="300 123 4567"
-            class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:border-transparent transition-all text-sm"
-          >
-          <p class="text-xs text-slate-400">Usado únicamente para coordinar el grupo vía WhatsApp antes de la salida.</p>
+        <div class="max-w-xl mx-auto">
+          <form class="bg-slate-800 p-6 rounded-2xl border border-slate-700 space-y-5" aria-label="Formulario de contacto">
+            <h3 class="text-xl font-bold text-white tracking-tight">Reserva tu cupo</h3>
+            
+            <div class="space-y-1.5">
+              <label for="email" class="block text-xs font-semibold uppercase tracking-wider text-slate-300">
+                Correo Electrónico
+              </label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="ejemplo@correo.com"
+                class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:border-transparent transition-all text-sm"
+              >
+              <p class="text-xs text-slate-400">Te enviaremos la confirmación y la guía digital a este correo.</p>
+            </div>
+
+            <div class="space-y-1.5">
+              <label for="phone" class="block text-xs font-semibold uppercase tracking-wider text-slate-300">
+                Teléfono Celular
+              </label>
+              <input 
+                type="tel" 
+                id="phone" 
+                name="phone" 
+                placeholder="300 123 4567"
+                class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:border-transparent transition-all text-sm"
+              >
+              <p class="text-xs text-slate-400">Usado únicamente para coordinar el grupo vía WhatsApp antes de la salida.</p>
+            </div>
+
+            <button type="submit" class="w-full bg-emerald-500 text-slate-950 font-bold px-6 py-3 rounded-xl hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-slate-800 transition-colors uppercase tracking-wider text-sm shadow-lg">
+              Inscríbete
+            </button>
+          </form>
         </div>
 
-      </form>
+      </div>
     </section>
 
-  </div>
+  </main>
+
+  <footer class="border-t border-slate-800 bg-slate-950 py-10">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="space-y-2">
+        <span class="text-xl font-black text-white tracking-wider uppercase">Rueda Libre</span>
+        <p class="text-xs text-slate-400">Comunidad y rodadas urbanas. Fomentando la movilidad sostenible y el deporte.</p>
+      </div>
+
+      <div class="space-y-2">
+        <h4 class="text-sm font-semibold text-slate-200">Navegación</h4>
+        <ul class="space-y-1 text-xs text-slate-400">
+          <li><a href="#rutas" class="hover:text-emerald-400">Rutas</a></li>
+          <li><a href="#como-funciona" class="hover:text-emerald-400">¿Cómo funciona?</a></li>
+          <li><a href="#inscripcion" class="hover:text-emerald-400">Inscripción</a></li>
+        </ul>
+      </div>
+
+      <div class="space-y-2">
+        <h4 class="text-sm font-semibold text-slate-200">Contacto</h4>
+        <p class="text-xs text-slate-400">WhatsApp: +57 300 123 4567</p>
+        <p class="text-xs text-slate-400">Email: contacto@ruedalibre.com</p>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
