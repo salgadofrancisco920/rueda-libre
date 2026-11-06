@@ -65,7 +65,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           
           <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-lg hover:shadow-2xl hover:border-secundario transition-all duration-300 space-y-4 p-6">
-            <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=800&q=80" alt="Luces del Centro" class="w-full h-48 object-cover rounded-xl">
+            <img src="https://media.bikemap.net/routes/17879724/staticmaps/in_ad546724-afd2-4b05-84f3-3ab1b75546fc_694x400_bikemap-2021-night-static.png" alt="Luces del Centro" class="w-full h-48 object-cover rounded-xl">
             <div class="flex flex-wrap items-center justify-between gap-2">
               <span class="inline-block bg-amarillo-farol/10 text-amarillo-farol font-semibold text-xs tracking-wider uppercase px-3 py-1 rounded-full border border-amarillo-farol/20">
                 Nivel: Fácil
@@ -97,7 +97,7 @@
           </div>
 
           <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-lg hover:shadow-2xl hover:border-secundario transition-all duration-300 space-y-4 p-6">
-            <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80" alt="Luna en Las Palmas" class="w-full h-48 object-cover rounded-xl">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmvm2sh1Ky2EzC_5fD_MZYa1FOl5mnIQCCgN7TeZR8GQ&s" alt="Luna en Las Palmas" class="w-full h-48 object-cover rounded-xl">
             <div class="flex flex-wrap items-center justify-between gap-2">
               <span class="inline-block bg-amarillo-farol/10 text-amarillo-farol font-semibold text-xs tracking-wider uppercase px-3 py-1 rounded-full border border-amarillo-farol/20">
                 Nivel: Intermedio
@@ -129,7 +129,7 @@
           </div>
 
           <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-lg hover:shadow-2xl hover:border-secundario transition-all duration-300 space-y-4 p-6">
-            <img src="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=800&q=80" alt="Circuito del Valle" class="w-full h-48 object-cover rounded-xl">
+            <img src="https://media.bikemap.net/routes/5298186/staticmaps/in_b21c8e3a-e03b-4d73-ab09-63fe2ca69900_694x400_bikemap-2021-night-static.png" alt="Circuito del Valle" class="w-full h-48 object-cover rounded-xl">
             <div class="flex flex-wrap items-center justify-between gap-2">
               <span class="inline-block bg-amarillo-farol/10 text-amarillo-farol font-semibold text-xs tracking-wider uppercase px-3 py-1 rounded-full border border-amarillo-farol/20">
                 Nivel: Avanzado
@@ -199,10 +199,10 @@
       </div>
     </section>
 
-    <section id="inscripcion" class="scroll-mt-24">
-      <div class="max-w-7xl mx-auto px-4 space-y-6">
+    <section id="inscripcion" class="scroll-mt-24 py-6">
+      <div class="max-w-3xl mx-auto px-4 space-y-6">
         
-        <div class="space-y-3 max-w-xl mx-auto">
+        <div class="space-y-3 max-w-2xl mx-auto">
           <div class="bg-sky-500/10 border-l-4 border-sky-500 p-4 rounded-xl text-sky-200">
             <h4 class="font-bold text-sky-400 text-sm font-montserrat">Información</h4>
             <p class="text-xs mt-1 opacity-90">Las salidas nocturnas requieren llevar luz blanca delantera y luz roja trasera en la bicicleta.</p>
@@ -214,40 +214,170 @@
           </div>
         </div>
 
-        <div class="max-w-xl mx-auto">
-          <form class="bg-slate-800 p-6 rounded-2xl border border-slate-700 space-y-5 shadow-xl" aria-label="Formulario de contacto">
-            <h3 class="text-xl font-bold text-white tracking-tight font-montserrat">Reserva tu cupo</h3>
+        <div class="max-w-2xl mx-auto">
+          <form class="bg-slate-800 p-6 md:p-8 rounded-2xl border border-slate-700 space-y-6 shadow-xl" aria-label="Formulario de inscripción">
+            <h3 class="text-2xl font-bold text-white tracking-tight font-montserrat text-center">Reserva tu cupo</h3>
             
-            <div class="space-y-1.5">
-              <label for="email" class="block text-xs font-semibold uppercase tracking-wider text-slate-300">
-                Correo Electrónico
-              </label>
-              <input 
-                type="email" 
-                id="email" 
-                name="email" 
-                placeholder="ejemplo@correo.com"
-                class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-secundario transition-all text-sm"
-              >
-              <p class="text-xs text-slate-400">Te enviaremos la confirmación y la guía digital a este correo.</p>
-            </div>
+            <fieldset class="space-y-4 border border-slate-700/80 p-4 rounded-xl">
+              <legend class="text-xs font-bold uppercase tracking-wider text-amarillo-farol px-2">1. Información del Ciclista</legend>
 
-            <div class="space-y-1.5">
-              <label for="phone" class="block text-xs font-semibold uppercase tracking-wider text-slate-300">
-                Teléfono Celular
-              </label>
+              <div class="space-y-1.5">
+                <label for="nombre" class="block text-xs font-semibold uppercase tracking-wider text-slate-300">
+                  Nombre Completo <span class="text-red-400">*</span>
+                </label>
+                <input 
+                  type="text" 
+                  id="nombre" 
+                  name="nombre" 
+                  required 
+                  minlength="3"
+                  placeholder="Tu nombre y apellido"
+                  class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-secundario text-sm"
+                >
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="space-y-1.5">
+                  <label for="email" class="block text-xs font-semibold uppercase tracking-wider text-slate-300">
+                    Correo Electrónico <span class="text-red-400">*</span>
+                  </label>
+                  <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    required 
+                    placeholder="ejemplo@correo.com"
+                    class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-secundario text-sm"
+                  >
+                  <p class="text-[11px] text-slate-400">Te enviaremos la confirmación aquí.</p>
+                </div>
+
+                <div class="space-y-1.5">
+                  <label for="phone" class="block text-xs font-semibold uppercase tracking-wider text-slate-300">
+                    Teléfono Celular <span class="text-red-400">*</span>
+                  </label>
+                  <input 
+                    type="tel" 
+                    id="phone" 
+                    name="phone" 
+                    required 
+                    pattern="^3[0-9]{9}$" 
+                    maxlength="10"
+                    title="El teléfono debe tener 10 dígitos y comenzar por 3"
+                    placeholder="3001234567"
+                    class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-secundario text-sm"
+                  >
+                  <p class="text-[11px] text-slate-400">10 dígitos, debe iniciar por 3.</p>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="space-y-4 border border-slate-700/80 p-4 rounded-xl">
+              <legend class="text-xs font-bold uppercase tracking-wider text-amarillo-farol px-2">2. Detalle de la Reserva</legend>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="space-y-1.5">
+                  <label for="ruta" class="block text-xs font-semibold uppercase tracking-wider text-slate-300">
+                    Ruta <span class="text-red-400">*</span>
+                  </label>
+                  <select 
+                    id="ruta" 
+                    name="ruta" 
+                    required 
+                    class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:ring-2 focus:ring-secundario text-sm"
+                  >
+                    <option value="" disabled selected>Selecciona una ruta</option>
+                    <option value="luces">Luces del Centro</option>
+                    <option value="palmas">Luna en Las Palmas</option>
+                    <option value="circuito">Circuito del Valle</option>
+                  </select>
+                </div>
+
+                <div class="space-y-1.5">
+                  <label for="dia" class="block text-xs font-semibold uppercase tracking-wider text-slate-300">
+                    Día de Salida <span class="text-red-400">*</span>
+                  </label>
+                  <select 
+                    id="dia" 
+                    name="dia" 
+                    required 
+                    class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:ring-2 focus:ring-secundario text-sm"
+                  >
+                    <option value="" disabled selected>Selecciona un día</option>
+                    <option value="jueves">Jueves</option>
+                    <option value="viernes">Viernes</option>
+                    <option value="sabado">Sábado</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="space-y-1.5">
+                  <label for="nivel" class="block text-xs font-semibold uppercase tracking-wider text-slate-300">
+                    Nivel de Experiencia <span class="text-red-400">*</span>
+                  </label>
+                  <select 
+                    id="nivel" 
+                    name="nivel" 
+                    required 
+                    class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:ring-2 focus:ring-secundario text-sm"
+                  >
+                    <option value="" disabled selected>Selecciona tu nivel</option>
+                    <option value="principiante">Principiante</option>
+                    <option value="intermedio">Intermedio</option>
+                    <option value="avanzado">Avanzado</option>
+                  </select>
+                </div>
+
+                <div class="space-y-1.5">
+                  <label for="acompanantes" class="block text-xs font-semibold uppercase tracking-wider text-slate-300">
+                    Acompañantes (0 a 3) <span class="text-red-400">*</span>
+                  </label>
+                  <input 
+                    type="number" 
+                    id="acompanantes" 
+                    name="acompanantes" 
+                    required 
+                    min="0" 
+                    max="3" 
+                    value="0"
+                    class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:ring-2 focus:ring-secundario text-sm"
+                  >
+                </div>
+              </div>
+
+              <div class="space-y-1.5">
+                <label for="bici" class="block text-xs font-semibold uppercase tracking-wider text-slate-300">
+                  ¿Tienes bicicleta propia? <span class="text-red-400">*</span>
+                </label>
+                <select 
+                  id="bici" 
+                  name="bici" 
+                  required 
+                  class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:ring-2 focus:ring-secundario text-sm"
+                >
+                  <option value="" disabled selected>Selecciona una opción</option>
+                  <option value="si">Sí</option>
+                  <option value="no">No</option>
+                </select>
+              </div>
+            </fieldset>
+
+            <div class="flex items-start space-x-3 pt-2">
               <input 
-                type="tel" 
-                id="phone" 
-                name="phone" 
-                placeholder="300 123 4567"
-                class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-secundario transition-all text-sm"
+                type="checkbox" 
+                id="terminos" 
+                name="terminos" 
+                required 
+                class="mt-1 h-4 w-4 rounded border-slate-700 bg-slate-900 text-secundario focus:ring-secundario"
               >
-              <p class="text-xs text-slate-400">Usado únicamente para coordinar el grupo vía WhatsApp antes de la salida.</p>
+              <label for="terminos" class="text-xs text-slate-300 leading-relaxed">
+                Acepto los términos, normas de seguridad y el uso de luces obligatorias durante la rodada. <span class="text-red-400">*</span>
+              </label>
             </div>
 
             <button type="submit" class="btn-primary w-full text-center">
-              Inscríbete
+              Completar Inscripción
             </button>
           </form>
         </div>

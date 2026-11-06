@@ -213,3 +213,10 @@ Bitácora de Evaluación Técnica: Bootstrap vs Tailwind CSS (Rueda Nocturna)
 Se recomienda adoptar Tailwind CSS para la versión definitiva de Rueda Nocturna por tres razones principales:
 1. Limpieza del marcado: Se abstrajeron los botones repetidos mediante @layer components y @apply, reduciendo la duplicación de utilidades sin perder la flexibilidad del marco.
 2. Rendimiento: El peso final del bundle CSS minificado es exponencialmente menor comparado con la carga combinada de CSS y JS de Bootstrap v2.0.
+
+
+Registro del Formulario
+Tiempo real: 37 minutos.
+Que se hizo: Se creo el formulario pidiendo los datos necesarios con casillas claras para cada informacion.
+Reglas que se aplicaron: El nombre pide minimo 3 letras, el celular debe tener 10 digitos y empezar por 3, los acompanantes van de 0 a 3, y todos los campos y la aceptacion de terminos son obligatorios.
+Disseño: Se organizo en dos columnas para celulares y computadores, manteniendo el estilo oscuro.   Pruebas: Se comprobo que no se envia si falta algo y que se puede usar facilmente solo con el teclado.   
