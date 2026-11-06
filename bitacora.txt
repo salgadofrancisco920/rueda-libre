@@ -195,3 +195,21 @@ Ancho de pantalla---Comportamiento esperado---Resultado de la prueba
 768 px (Tablet - md)---Las rutas pasan automáticamente a dos columnas.---Aprobado: El grid responde correctamente a partir del breakpoint medio.
 1024 px (Escritorio - lg)---Las rutas se despliegan en tres columnas limpias.---Aprobado: Distribución completa de las 3 tarjetas en pantalla.
 1280 px (Escritorio ancho)---Ancho máximo controlado y centrado mediante contenedores fluidos (max-w-6xl).---Aprobado: Mantiene la proporción y legibilidad sin estirarse de más.
+
+
+Bitácora de Evaluación Técnica: Bootstrap vs Tailwind CSS (Rueda Nocturna)
+1. Mediciones de Rendimiento y Tamaño de Recursos
+- Tailwind CSS (--minify): 12.4 KB (CSS procesado y optimizado mediante Purge/Tree-shaking).
+- Bootstrap v2.0 (DevTools Network): 145.8 KB (CSS: 108.2 KB, JavaScript: 37.6 KB).
+
+2. Comparativa por Criterios
+
+- Curva de aprendizaje: Bootstrap ofrece un desarrollo rápido al principio mediante componentes visuales preconstruidos, pero exige adaptarse a sus nombres de clases y lógica de JavaScript. Tailwind CSS requiere memorizar utilidades atómicas al inicio, pero permite construir interfaces directamente en el HTML con control absoluto sobre el diseño.
+- Personalización: Modificar estilos por defecto en Bootstrap suele requerir sobrescribir reglas CSS o compilar archivos Sass. Tailwind facilita ajustar la identidad visual mediante la configuración de temas (@theme) y la reutilización moderada con @layer components y @apply.
+- Tamaño final: La CLI de Tailwind remueve automáticamente todo el CSS no utilizado al generar la compilación minificada (--minify), produciendo un bundle sumamente ligero. Bootstrap obliga a cargar la hoja de estilos completa y sus scripts, pesando considerablemente más.
+- Casos de uso: Bootstrap se adapta bien a tableros de administración o prototipos donde el diseño visual no requiere diferenciación. Tailwind es ideal para landings a medida, interfaces con soporte claro/oscuro y sitios enfocados en optimizar la velocidad de carga.
+
+3. Recomendación Justificada
+Se recomienda adoptar Tailwind CSS para la versión definitiva de Rueda Nocturna por tres razones principales:
+1. Limpieza del marcado: Se abstrajeron los botones repetidos mediante @layer components y @apply, reduciendo la duplicación de utilidades sin perder la flexibilidad del marco.
+2. Rendimiento: El peso final del bundle CSS minificado es exponencialmente menor comparado con la carga combinada de CSS y JS de Bootstrap v2.0.

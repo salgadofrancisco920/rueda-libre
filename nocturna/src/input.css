@@ -13,3 +13,16 @@
   --font-opensans: 'Open Sans', sans-serif;
 }
 
+@layer components {
+  .btn-primary {
+    @apply inline-block bg-primario text-white dark:bg-amarillo-farol dark:text-slate-950 font-bold px-6 py-3 rounded-xl hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-secundario transition-colors uppercase tracking-wider text-sm shadow-lg font-titulos;
+  }
+
+  .btn-primary-sm {
+    @apply inline-block bg-primario text-white dark:bg-amarillo-farol dark:text-slate-950 font-bold px-5 py-2.5 rounded-xl hover:opacity-90 transition-colors uppercase tracking-wider text-xs shadow-lg text-center font-titulos;
+  }
+
+  .btn-outline {
+    @apply inline-block bg-transparent text-primario dark:text-amarillo-farol border border-primario/50 dark:border-amarillo-farol/50 font-bold px-6 py-3 rounded-xl hover:bg-primario/10 dark:hover:bg-amarillo-farol/10 focus:outline-none focus:ring-2 focus:ring-secundario transition-colors uppercase tracking-wider text-sm font-titulos;
+  }
+}
