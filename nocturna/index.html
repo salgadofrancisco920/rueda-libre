@@ -6,20 +6,20 @@
   <title>Rueda Nocturna</title>
   <link rel="stylesheet" href="src/output.css">
 </head>
-<body class="bg-slate-900 text-slate-100 min-h-screen py-10 px-4">
+<body class="bg-slate-900 text-slate-100 min-h-screen py-6 px-4 sm:py-10 sm:px-6">
 
-  <div class="max-w-xl mx-auto space-y-8">
+  <div class="max-w-xl md:max-w-3xl lg:max-w-6xl mx-auto space-y-10 lg:space-y-16">
 
-    <main class="bg-slate-800 p-8 rounded-2xl border border-slate-700 space-y-6">
+    <main class="bg-slate-800 p-6 sm:p-8 lg:p-12 rounded-2xl border border-slate-700 space-y-6">
       <span class="inline-block bg-emerald-500/10 text-emerald-400 font-semibold text-xs tracking-wider uppercase px-3 py-1 rounded-full border border-emerald-500/20">
         Nuevo - Jueves a sábado
       </span>
 
-      <div class="space-y-2">
-        <h1 class="text-3xl font-bold text-white tracking-tight leading-tight">
+      <div class="space-y-3">
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-tight">
           Rueda Nocturna
         </h1>
-        <p class="text-slate-400 text-base leading-relaxed">
+        <p class="text-slate-400 text-base sm:text-lg leading-relaxed">
           Descubre Medellín en bici cuando se encienden las luces
         </p>
       </div>
@@ -36,121 +36,131 @@
         </div>
       </div>
 
-      <div class="space-y-3">
-        <a href="#" class="block w-full text-center bg-emerald-500 text-slate-950 font-bold px-6 py-3 rounded-xl hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-slate-800 transition-colors uppercase tracking-wider text-sm shadow-lg">
+      <div class="flex flex-col sm:flex-row gap-3">
+        <a href="#" class="block w-full sm:flex-1 text-center bg-emerald-500 text-slate-950 font-bold px-6 py-3 rounded-xl hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-slate-800 transition-colors uppercase tracking-wider text-sm shadow-lg">
           Inscríbete
         </a>
 
-        <a href="#" class="block w-full text-center bg-slate-700 text-slate-200 font-bold px-6 py-3 rounded-xl hover:bg-slate-600 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-800 transition-colors uppercase tracking-wider text-sm">
+        <a href="#" class="block w-full sm:flex-1 text-center bg-slate-700 text-slate-200 font-bold px-6 py-3 rounded-xl hover:bg-slate-600 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-800 transition-colors uppercase tracking-wider text-sm">
           Más Información
         </a>
 
-        <a href="#" class="block w-full text-center bg-transparent text-emerald-400 border border-emerald-500/50 font-bold px-6 py-3 rounded-xl hover:bg-emerald-500/10 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-slate-800 transition-colors uppercase tracking-wider text-sm">
+        <a href="#" class="block w-full sm:flex-1 text-center bg-transparent text-emerald-400 border border-emerald-500/50 font-bold px-6 py-3 rounded-xl hover:bg-emerald-500/10 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-slate-800 transition-colors uppercase tracking-wider text-sm">
           Ver Rutas
         </a>
       </div>
     </main>
 
     <section class="space-y-6">
-      <div class="text-center space-y-2">
-        <h2 class="text-2xl font-bold text-white tracking-tight">Rutas Disponibles</h2>
-        <p class="text-slate-400 text-sm">Salidas desde la sede de Rueda Libre. Incluyen bicicleta, casco, luces LED, chaleco reflectivo y guía.</p>
+      <div class="text-center space-y-2 max-w-2xl mx-auto">
+        <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Rutas Disponibles</h2>
+        <p class="text-slate-400 text-sm sm:text-base">Salidas desde la sede de Rueda Libre. Incluyen bicicleta, casco, luces LED, chaleco reflectivo y guía.</p>
       </div>
 
-      <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-lg hover:shadow-2xl hover:border-slate-500 transition-all duration-300 space-y-4 p-6">
-        <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=800&q=80" alt="Luces del Centro" class="w-full h-48 object-cover rounded-xl">
-        <div class="flex flex-wrap items-center justify-between gap-2">
-          <span class="inline-block bg-emerald-500/10 text-emerald-400 font-semibold text-xs tracking-wider uppercase px-3 py-1 rounded-full border border-emerald-500/20">
-            Nivel: Fácil
-          </span>
-          <span class="text-xs text-slate-400 uppercase tracking-wider">Punto de encuentro: Sede</span>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold text-white tracking-tight">Luces del Centro</h3>
-        </div>
-        <div class="grid grid-cols-2 gap-4 border-y border-slate-700/60 py-4">
-          <div>
-            <p class="text-xs uppercase tracking-wider text-slate-400">Distancia</p>
-            <p class="text-base font-semibold text-slate-200">10 km</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-lg hover:shadow-2xl hover:border-slate-500 transition-all duration-300 flex flex-col justify-between p-6 space-y-4">
+          <div class="space-y-4">
+            <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=800&q=80" alt="Luces del Centro" class="w-full h-48 object-cover rounded-xl">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <span class="inline-block bg-emerald-500/10 text-emerald-400 font-semibold text-xs tracking-wider uppercase px-3 py-1 rounded-full border border-emerald-500/20">
+                Nivel: Fácil
+              </span>
+              <span class="text-xs text-slate-400 uppercase tracking-wider">Punto de encuentro: Sede</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-white tracking-tight">Luces del Centro</h3>
+            </div>
+            <div class="grid grid-cols-2 gap-4 border-y border-slate-700/60 py-4">
+              <div>
+                <p class="text-xs uppercase tracking-wider text-slate-400">Distancia</p>
+                <p class="text-base font-semibold text-slate-200">10 km</p>
+              </div>
+              <div>
+                <p class="text-xs uppercase tracking-wider text-slate-400">Duración</p>
+                <p class="text-base font-semibold text-slate-200">2 h</p>
+              </div>
+            </div>
           </div>
-          <div>
-            <p class="text-xs uppercase tracking-wider text-slate-400">Duración</p>
-            <p class="text-base font-semibold text-slate-200">2 h</p>
+          <div class="flex items-center justify-between gap-4 pt-2">
+            <div class="shrink-0">
+              <p class="text-xs uppercase tracking-wider text-slate-400">Precio</p>
+              <p class="text-xl font-bold text-emerald-400">$55.000</p>
+            </div>
+            <a href="#" class="inline-block bg-emerald-500 text-slate-950 font-bold px-5 py-2.5 rounded-xl hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-slate-800 transition-colors uppercase tracking-wider text-xs shadow-lg text-center">
+              Inscríbete
+            </a>
           </div>
         </div>
-        <div class="flex items-center justify-between gap-4 pt-2">
-          <div class="shrink-0">
-            <p class="text-xs uppercase tracking-wider text-slate-400">Precio</p>
-            <p class="text-xl font-bold text-emerald-400">$55.000</p>
-          </div>
-          <a href="#" class="inline-block bg-emerald-500 text-slate-950 font-bold px-6 py-3 rounded-xl hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-slate-800 transition-colors uppercase tracking-wider text-sm shadow-lg text-center">
-            Inscríbete
-          </a>
-        </div>
-      </div>
 
-      <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-lg hover:shadow-2xl hover:border-slate-500 transition-all duration-300 space-y-4 p-6">
-        <img src="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=800&q=80" alt="Miradores de la Ciudad" class="w-full h-48 object-cover rounded-xl">
-        <div class="flex flex-wrap items-center justify-between gap-2">
-          <span class="inline-block bg-amber-500/10 text-amber-400 font-semibold text-xs tracking-wider uppercase px-3 py-1 rounded-full border border-amber-500/20">
-            Nivel: Medio
-          </span>
-          <span class="text-xs text-slate-400 uppercase tracking-wider">Punto de encuentro: Sede</span>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold text-white tracking-tight">Miradores de la Ciudad</h3>
-        </div>
-        <div class="grid grid-cols-2 gap-4 border-y border-slate-700/60 py-4">
-          <div>
-            <p class="text-xs uppercase tracking-wider text-slate-400">Distancia</p>
-            <p class="text-base font-semibold text-slate-200">16 km</p>
+        <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-lg hover:shadow-2xl hover:border-slate-500 transition-all duration-300 flex flex-col justify-between p-6 space-y-4">
+          <div class="space-y-4">
+            <img src="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=800&q=80" alt="Miradores de la Ciudad" class="w-full h-48 object-cover rounded-xl">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <span class="inline-block bg-amber-500/10 text-amber-400 font-semibold text-xs tracking-wider uppercase px-3 py-1 rounded-full border border-amber-500/20">
+                Nivel: Medio
+              </span>
+              <span class="text-xs text-slate-400 uppercase tracking-wider">Punto de encuentro: Sede</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-white tracking-tight">Miradores de la Ciudad</h3>
+            </div>
+            <div class="grid grid-cols-2 gap-4 border-y border-slate-700/60 py-4">
+              <div>
+                <p class="text-xs uppercase tracking-wider text-slate-400">Distancia</p>
+                <p class="text-base font-semibold text-slate-200">16 km</p>
+              </div>
+              <div>
+                <p class="text-xs uppercase tracking-wider text-slate-400">Duración</p>
+                <p class="text-base font-semibold text-slate-200">3 h</p>
+              </div>
+            </div>
           </div>
-          <div>
-            <p class="text-xs uppercase tracking-wider text-slate-400">Duración</p>
-            <p class="text-base font-semibold text-slate-200">3 h</p>
+          <div class="flex items-center justify-between gap-4 pt-2">
+            <div class="shrink-0">
+              <p class="text-xs uppercase tracking-wider text-slate-400">Precio</p>
+              <p class="text-xl font-bold text-emerald-400">$75.000</p>
+            </div>
+            <a href="#" class="inline-block bg-emerald-500 text-slate-950 font-bold px-5 py-2.5 rounded-xl hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-slate-800 transition-colors uppercase tracking-wider text-xs shadow-lg text-center">
+              Inscríbete
+            </a>
           </div>
         </div>
-        <div class="flex items-center justify-between gap-4 pt-2">
-          <div class="shrink-0">
-            <p class="text-xs uppercase tracking-wider text-slate-400">Precio</p>
-            <p class="text-xl font-bold text-emerald-400">$75.000</p>
-          </div>
-          <a href="#" class="inline-block bg-emerald-500 text-slate-950 font-bold px-6 py-3 rounded-xl hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-slate-800 transition-colors uppercase tracking-wider text-sm shadow-lg text-center">
-            Inscríbete
-          </a>
-        </div>
-      </div>
 
-      <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-lg hover:shadow-2xl hover:border-slate-500 transition-all duration-300 space-y-4 p-6">
-        <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80" alt="Luna en Las Palmas" class="w-full h-48 object-cover rounded-xl">
-        <div class="flex flex-wrap items-center justify-between gap-2">
-          <span class="inline-block bg-rose-500/10 text-rose-400 font-semibold text-xs tracking-wider uppercase px-3 py-1 rounded-full border border-rose-500/20">
-            Nivel: Difícil
-          </span>
-          <span class="text-xs text-slate-400 uppercase tracking-wider">Punto de encuentro: Sede</span>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold text-white tracking-tight">Luna en Las Palmas</h3>
-        </div>
-        <div class="grid grid-cols-2 gap-4 border-y border-slate-700/60 py-4">
-          <div>
-            <p class="text-xs uppercase tracking-wider text-slate-400">Distancia</p>
-            <p class="text-base font-semibold text-slate-200">22 km</p>
+        <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-lg hover:shadow-2xl hover:border-slate-500 transition-all duration-300 flex flex-col justify-between p-6 space-y-4 md:col-span-2 lg:col-span-1">
+          <div class="space-y-4">
+            <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80" alt="Luna en Las Palmas" class="w-full h-48 object-cover rounded-xl">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <span class="inline-block bg-rose-500/10 text-rose-400 font-semibold text-xs tracking-wider uppercase px-3 py-1 rounded-full border border-rose-500/20">
+                Nivel: Difícil
+              </span>
+              <span class="text-xs text-slate-400 uppercase tracking-wider">Punto de encuentro: Sede</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-white tracking-tight">Luna en Las Palmas</h3>
+            </div>
+            <div class="grid grid-cols-2 gap-4 border-y border-slate-700/60 py-4">
+              <div>
+                <p class="text-xs uppercase tracking-wider text-slate-400">Distancia</p>
+                <p class="text-base font-semibold text-slate-200">22 km</p>
+              </div>
+              <div>
+                <p class="text-xs uppercase tracking-wider text-slate-400">Duración</p>
+                <p class="text-base font-semibold text-slate-200">3,5 h</p>
+              </div>
+            </div>
           </div>
-          <div>
-            <p class="text-xs uppercase tracking-wider text-slate-400">Duración</p>
-            <p class="text-base font-semibold text-slate-200">3,5 h</p>
+          <div class="flex items-center justify-between gap-4 pt-2">
+            <div class="shrink-0">
+              <p class="text-xs uppercase tracking-wider text-slate-400">Precio</p>
+              <p class="text-xl font-bold text-emerald-400">$95.000</p>
+            </div>
+            <a href="#" class="inline-block bg-emerald-500 text-slate-950 font-bold px-5 py-2.5 rounded-xl hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-slate-800 transition-colors uppercase tracking-wider text-xs shadow-lg text-center">
+              Inscríbete
+            </a>
           </div>
         </div>
-        <div class="flex items-center justify-between gap-4 pt-2">
-          <div class="shrink-0">
-            <p class="text-xs uppercase tracking-wider text-slate-400">Precio</p>
-            <p class="text-xl font-bold text-emerald-400">$95.000</p>
-          </div>
-          <a href="#" class="inline-block bg-emerald-500 text-slate-950 font-bold px-6 py-3 rounded-xl hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-slate-800 transition-colors uppercase tracking-wider text-sm shadow-lg text-center">
-            Inscríbete
-          </a>
-        </div>
+
       </div>
     </section>
 

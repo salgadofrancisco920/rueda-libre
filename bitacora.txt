@@ -182,3 +182,16 @@ Etiquetas Semánticas: Se implementó <header> para la barra superior, <main> pa
 Contenedor Unificado: Para mantener consistencia en la alineación horizontal sin romper franjas de ancho completo en el fondo, se aplicó exactamente el mismo patrón en todas las secciones: max-w-7xl mx-auto px-4.
 Distribución de Pasos ("¿Cómo funciona?"): Se eligió CSS Grid (grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6). La razón es que al tratarse de 4 pasos continuos con una estructura uniforme, Grid permite un control de layout más estricto en pantallas de escritorio sin sufrir desalineaciones por variaciones en la cantidad de texto de cada tarjeta, además de adaptarse fluidamente de 1 a 2 y luego a 4 columnas mediante breakpoints responsive (sm y lg).
 Respeto al Kit: Cada botón, tarjeta, alerta y campo de formulario incluye exactamente la sintaxis de clases provista en componentes.html sin alterar estilos ni nombres.
+
+
+Contenedor principal: Generaba scroll horizontal y desbordamiento en pantallas angostas debido a anchos fijos y paddings muy grandes.
+Botones del encabezado: Permanecían en línea horizontal, provocando que el texto se comprimiera demasiado o se saliera del contenedor.
+Sección de rutas: Las tarjetas se mostraban con dimensiones no adaptadas, acumulando espacios vacíos y desalineación vertical.
+
+
+
+Ancho de pantalla---Comportamiento esperado---Resultado de la prueba
+360 px (Móvil)---Contenido en una sola columna, sin scroll horizontal, botones y elementos apilados.---	-Aprobado: Se ajusta al ancho base sin desbordes laterales.
+768 px (Tablet - md)---Las rutas pasan automáticamente a dos columnas.---Aprobado: El grid responde correctamente a partir del breakpoint medio.
+1024 px (Escritorio - lg)---Las rutas se despliegan en tres columnas limpias.---Aprobado: Distribución completa de las 3 tarjetas en pantalla.
+1280 px (Escritorio ancho)---Ancho máximo controlado y centrado mediante contenedores fluidos (max-w-6xl).---Aprobado: Mantiene la proporción y legibilidad sin estirarse de más.
