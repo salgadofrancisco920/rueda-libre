@@ -133,3 +133,14 @@ Dia 1 Semana 2
    Fila del formulario: Flexbox, porque ubica dos campos juntos en una misma linea horizontal. 
    Encabezado: Flexbox, porque pone el titulo a un lado y el menu al otro en una sola linea.
    Pie de pagina: Flexbox, porque ordena los bloques de contacto de forma horizontal en una sola fila.   
+
+
+   Desbordamiento horizontal en tablas tarifas.html:
+Problema: En pantallas de 360 px, las tablas de tarifas y recorridos se salian de la pantalla por el tamano de fuente y los margenes fijos.
+Solucion: Se redujo el tamano de texto y el espaciado en la version movil (table, th, td), logrando que se lean completas sin scroll lateral.
+Apilamiento del menu de navegacion (header):
+Problema: El logo y los enlaces del menu se amontonaban horizontalmente en celulares, rompiendo el diseno.
+Solucion: Se ajusto con flex-direction: column para que el nombre quede arriba y el menu centrado abajo en movil, recuperando la distribucion horizontal original a partir de 768 px.
+Imagenes rebasando contenedores:
+Problema: Algunas imagenes de la flota y las rutas conservaban su tamano original y descuadraban la vista vertical.
+Solucion: Se aplico una regla global con max-width: 100% y height: auto para asegurar que todas las imagenes se adapten de forma fluida a cualquier pantalla.
