@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rueda Libre - Landing Page</title>
+  <title>Rueda Nocturna - Rueda Libre</title>
   <link rel="stylesheet" href="src/output.css">
 </head>
 <body class="bg-acento text-slate-100 min-h-screen font-opensans transition-colors duration-300">
@@ -11,18 +11,20 @@
   <header class="border-b border-slate-800 bg-acento/90 backdrop-blur-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
       <div class="flex items-center space-x-2">
-        <span class="text-2xl font-black font-montserrat text-amarillo-farol tracking-wider uppercase">Rueda Libre</span>
+        <a href="../index.html" class="text-2xl font-black font-montserrat text-amarillo-farol tracking-wider uppercase hover:opacity-80 transition-opacity">Rueda Nocturna</a>
       </div>
 
       <nav class="hidden md:flex flex-wrap items-center justify-center gap-6 text-sm font-semibold text-slate-300">
-        <a href="#rutas" class="hover:text-amarillo-farol transition-colors">Rutas</a>
+        <a href="../index(1).html" class="hover:text-amarillo-farol transition-colors">Volver al Sitio</a>
+        <a href="#rutas" class="hover:text-amarillo-farol transition-colors">Rutas Nocturnas</a>
+        <a href="#planes" class="hover:text-amarillo-farol transition-colors">Planes</a>
         <a href="#como-funciona" class="hover:text-amarillo-farol transition-colors">¿Cómo funciona?</a>
         <a href="#inscripcion" class="hover:text-amarillo-farol transition-colors">Inscripción</a>
       </nav>
 
       <div>
-        <a href="#inscripcion" class="btn-primary">
-          Inscríbete
+        <a href="../paginas/reservas.html" class="btn-primary">
+          Ir a Reservas
         </a>
       </div>
     </div>
@@ -58,7 +60,7 @@
     <section id="rutas" class="scroll-mt-24">
       <div class="max-w-7xl mx-auto px-4 space-y-8">
         <div class="text-center space-y-2 max-w-2xl mx-auto">
-          <h2 class="text-3xl font-bold font-montserrat text-white tracking-tight">Nuestras Rutas</h2>
+          <h2 class="text-3xl font-bold font-montserrat text-white tracking-tight">Nuestras Rutas Nocturnas</h2>
           <p class="text-slate-300 text-sm">Elige el recorrido que mejor se adapte a tu nivel y ritmo.</p>
         </div>
 
@@ -157,6 +159,92 @@
               <a href="#inscripcion" class="btn-primary-sm">
                 Inscríbete
               </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE PLANES CON ESTILO DESTACADO EN VERDE ESMERALDA -->
+    <section id="planes" class="scroll-mt-24">
+      <div class="max-w-7xl mx-auto px-4 space-y-8">
+        <div class="text-center space-y-2 max-w-2xl mx-auto">
+          <h2 class="text-3xl font-bold font-montserrat text-white tracking-tight">Planes Rueda Nocturna</h2>
+          <p class="text-slate-300 text-sm">Elige la modalidad perfecta para vivir tu experiencia nocturna en la ciudad.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
+          
+          <!-- Card Individual -->
+          <div class="bg-slate-800 rounded-2xl border border-slate-700 p-6 flex flex-col justify-between space-y-6 shadow-lg hover:border-slate-500 transition-all">
+            <div class="space-y-4">
+              <div class="flex justify-between items-center">
+                <h3 class="text-xl font-bold font-montserrat text-white">Individual</h3>
+                <span class="text-xs font-semibold uppercase tracking-wider text-slate-400 bg-slate-900/60 px-2.5 py-1 rounded-lg">Básico</span>
+              </div>
+              <div>
+                <p class="text-3xl font-black font-montserrat text-amarillo-farol">$55.000</p>
+                <p class="text-xs text-slate-400">por persona</p>
+              </div>
+              <ul class="space-y-2.5 text-sm text-slate-300 border-t border-slate-700/60 pt-4">
+                <li class="flex items-center gap-2">✓ Bicicleta y casco</li>
+                <li class="flex items-center gap-2">✓ Luces LED y chaleco</li>
+                <li class="flex items-center gap-2">✓ Guía certificado</li>
+                <li class="flex items-center gap-2">✓ Hidratación</li>
+              </ul>
+            </div>
+            <div>
+              <a href="#inscripcion" class="btn-outline w-full text-center block py-3 rounded-xl font-semibold transition-all">Elegir Plan</a>
+            </div>
+          </div>
+
+          <!-- Card Pareja (DESTACADO EN VERDE ESMERALDA) -->
+          <div class="bg-gradient-to-b from-slate-800 via-slate-800 to-slate-900 rounded-2xl border-4 border-emerald-500 p-6 flex flex-col justify-between space-y-6 shadow-2xl relative lg:-translate-y-2">
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-emerald-500 text-slate-950 font-black text-xs uppercase tracking-wider px-4 py-1.5 rounded-full shadow-lg">
+              ★ Más elegido ★
+            </div>
+            <div class="space-y-4 pt-2">
+              <div class="flex justify-between items-center">
+                <h3 class="text-xl font-bold font-montserrat text-white">Pareja</h3>
+                <span class="text-xs font-bold uppercase tracking-wider text-slate-950 bg-emerald-400 px-2.5 py-1 rounded-lg">Dúo</span>
+              </div>
+              <div>
+                <p class="text-3xl font-black font-montserrat text-emerald-400">$99.000</p>
+                <p class="text-xs text-slate-300 font-medium">las dos personas</p>
+              </div>
+              <ul class="space-y-2.5 text-sm text-slate-100 border-t border-slate-700 pt-4 font-medium">
+                <li class="flex items-center gap-2">✓ Todo lo del plan Individual</li>
+                <li class="flex items-center gap-2">✓ Foto del recorrido</li>
+                <li class="flex items-center gap-2">✓ Snack para dos</li>
+                <li class="flex items-center gap-2">✓ Prioridad en la ruta</li>
+              </ul>
+            </div>
+            <div>
+              <a href="#inscripcion" class="w-full text-center block py-3 rounded-xl font-bold shadow-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 transition-all">Elegir Plan</a>
+            </div>
+          </div>
+
+          <!-- Card Grupo -->
+          <div class="bg-slate-800 rounded-2xl border border-slate-700 p-6 flex flex-col justify-between space-y-6 shadow-lg hover:border-slate-500 transition-all">
+            <div class="space-y-4">
+              <div class="flex justify-between items-center">
+                <h3 class="text-xl font-bold font-montserrat text-white">Grupo (4 a 5)</h3>
+                <span class="text-xs font-semibold uppercase tracking-wider text-slate-400 bg-slate-900/60 px-2.5 py-1 rounded-lg">Equipo</span>
+              </div>
+              <div>
+                <p class="text-3xl font-black font-montserrat text-amarillo-farol">$45.000</p>
+                <p class="text-xs text-slate-400">por persona</p>
+              </div>
+              <ul class="space-y-2.5 text-sm text-slate-300 border-t border-slate-700/60 pt-4">
+                <li class="flex items-center gap-2">✓ Todo lo del plan Individual</li>
+                <li class="flex items-center gap-2">✓ Guía exclusivo</li>
+                <li class="flex items-center gap-2">✓ Horario a elección</li>
+                <li class="flex items-center gap-2">✓ Fotos del grupo</li>
+              </ul>
+            </div>
+            <div>
+              <a href="#inscripcion" class="btn-outline w-full text-center block py-3 rounded-xl font-semibold transition-all">Elegir Plan</a>
             </div>
           </div>
 
@@ -397,8 +485,9 @@
       <div class="space-y-2">
         <h4 class="text-sm font-semibold text-slate-200 font-montserrat">Navegación</h4>
         <ul class="space-y-1 text-xs text-slate-400">
-          <li><a href="#rutas" class="hover:text-amarillo-farol transition-colors">Rutas</a></li>
-          <li><a href="#como-funciona" class="hover:text-amarillo-farol transition-colors">¿Cómo funciona?</a></li>
+          <li><a href="../index(1).html" class="hover:text-amarillo-farol transition-colors">Sitio Principal</a></li>
+          <li><a href="#rutas" class="hover:text-amarillo-farol transition-colors">Rutas Nocturnas</a></li>
+          <li><a href="#planes" class="hover:text-amarillo-farol transition-colors">Planes</a></li>
           <li><a href="#inscripcion" class="hover:text-amarillo-farol transition-colors">Inscripción</a></li>
         </ul>
       </div>

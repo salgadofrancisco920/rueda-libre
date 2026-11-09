@@ -215,8 +215,26 @@ Se recomienda adoptar Tailwind CSS para la versión definitiva de Rueda Nocturna
 2. Rendimiento: El peso final del bundle CSS minificado es exponencialmente menor comparado con la carga combinada de CSS y JS de Bootstrap v2.0.
 
 
-Registro del Formulario
+MiniReto 9 Regsitro.
 Tiempo real: 37 minutos.
 Que se hizo: Se creo el formulario pidiendo los datos necesarios con casillas claras para cada informacion.
 Reglas que se aplicaron: El nombre pide minimo 3 letras, el celular debe tener 10 digitos y empezar por 3, los acompanantes van de 0 a 3, y todos los campos y la aceptacion de terminos son obligatorios.
-Disseño: Se organizo en dos columnas para celulares y computadores, manteniendo el estilo oscuro.   Pruebas: Se comprobo que no se envia si falta algo y que se puede usar facilmente solo con el teclado.   
+Disseño: Se organizo en dos columnas para celulares y computadores, manteniendo el estilo oscuro.   Pruebas: Se comprobo que no se envia si falta algo y que se puede usar facilmente solo con el teclado.  
+
+
+Tiempo real de ejecución: 1 hora
+
+Cambios realizados.
+Integración de menú de navegación hacia "Rueda Nocturna" en el sitio principal.
+Corrección de rutas en los enlaces de navegación (../ y nombres de carpetas) que generaban errores de tipo "File not found" al cambiar entre subpáginas y la raíz.
+
+
+Tiempo estimado: 45 minutos
+Tiempo real de ejecución: 57 minutos
+Cambios realizados.
+Creación e integración de la nueva sección "Planes Rueda Nocturna" en la landing page RuedaNocturna/index(2).html
+Implementación de estructura responsiva con Grid de 1 columna en móviles y 3 columnas en pantallas grande.
+Aplicación de Flexbox en cada tarjeta para asegurar la misma altura y la alineación de los botones al final de cada card.
+Destacado visual del plan "Pareja" mediante un borde de mayor grosor (border-2 border-amarillo-farol), sombra acentuada y la etiqueta superior "Más elegido".
+Verificación del Box Model (relleno, bordes y espaciados) y mantenimiento del modo oscuro con contraste adecuado.
+Despliegue: Verificado localmente y desplegado en GitHub Pages sin errores.
