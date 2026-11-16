@@ -1,31 +1,29 @@
+/* Estilos generales y reset basico */
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
+/* Variables de colores y fuentes */
 :root {
-  --color-primario: #1b4d3e;
-  --color-secundario: #e67e22;
-  --color-acento: #0f172a;
-  --color-fondo: #fdfbf7;
-  --color-texto: #5b6470;
-  --color-blanco: #ffffff;
-  --color-whatsapp: #25d366;
-  --gris-asfalto: #5b6470;
-  --verde-ruta: #1b4d3e;
-  --color-foco: #e67e22;
-  --fuente-titulos: 'Montserrat', sans-serif;
-  --fuente-cuerpo: 'Open Sans', sans-serif;
-  --espacio-xs: 0.5rem; 
-  --espacio-sm: 1rem;    
-  --espacio-md: 1.5rem;
-  --espacio-lg: 2rem;
-  --espacio-xl: 3rem;
+  --primary-color: #1b4d3e;
+  --secondary-color: #e67e22;
+  --accent-color: #0f172a;
+  --bg-color: #fdfbf7;
+  --text-color: #5b6470;
+  --white-color: #ffffff;
+  --whatsapp-color: #25d366;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+  --space-xs: 0.5rem; 
+  --space-sm: 1rem;    
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
 }
 
 body {
-  font-family: var(--fuente-cuerpo);
-  background-color: var(--color-fondo); 
-  color: var(--color-texto);         
+  font-family: var(--font-body);
+  background-color: var(--bg-color); 
+  color: var(--text-color);         
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -35,19 +33,20 @@ main {
   width: 100%;
   max-width: 75rem;
   margin: 0 auto;
-  padding: var(--espacio-sm);
+  padding: var(--space-sm);
   padding-bottom: 5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--fuente-titulos);
-  color: var(--color-primario);
+  font-family: var(--font-heading);
+  color: var(--primary-color);
 }
 
+/* Encabezado y navegacion */
 header {
-  background-color: var(--color-blanco);
+  background-color: var(--white-color);
   border-bottom: 1px solid #ddd;
-  padding: var(--espacio-sm);
+  padding: var(--space-sm);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,7 +56,7 @@ header {
 header img {
   max-width: 100%;
   height: auto;
-  margin-bottom: var(--espacio-xs);
+  margin-bottom: var(--space-xs);
 }
 
 nav ul#menu {
@@ -67,29 +66,30 @@ nav ul#menu {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--espacio-xs);
+  gap: var(--space-xs);
 }
 
 #menu a {
-  color: var(--gris-asfalto);
+  color: var(--text-color);
   text-decoration: none;
-  padding: var(--espacio-xs) var(--espacio-sm);
+  padding: var(--space-xs) var(--space-sm);
   transition: color 0.2s ease;
   display: block;
 }
 
-#menu a.activo {
-  color: var(--verde-ruta);
+#menu a.active {
+  color: var(--primary-color);
   font-weight: 600;
 }
 
 #menu a:hover,
 #menu a:focus {
-  color: var(--color-secundario);
-  outline: 2px solid var(--color-foco);
+  color: var(--secondary-color);
+  outline: 2px solid var(--secondary-color);
   outline-offset: 2px;
 }
 
+/* Imagenes y secciones principales */
 img {
   max-width: 100%;
   height: auto;
@@ -103,29 +103,30 @@ img {
 .portada-grid,
 .galeria-rutas,
 .main-reservas,
-.contenedor-flota {
+.fleet-container {
   display: flex;
   flex-direction: column;
-  gap: var(--espacio-md);
-  margin-top: var(--espacio-md);
-  margin-bottom: var(--espacio-md);
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-md);
 }
 
-.fila-campos {
+.field-row {
   display: flex;
   flex-direction: column;
   gap: 0;
 }
 
-.tarjeta-ruta,
-.tarjeta-flota,
+/* Tarjetas de flota, servicios y rutas */
+.route-card,
+.fleet-card,
 section article, 
-.tarjeta-servicio {
-  background-color: var(--color-blanco);
+.service-card {
+  background-color: var(--white-color);
   border: 1px solid #e2e8f0;
   border-radius: 8px;
-  padding: var(--espacio-sm);
-  margin-bottom: var(--espacio-md);
+  padding: var(--space-sm);
+  margin-bottom: var(--space-md);
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   position: relative;
 }
@@ -134,20 +135,21 @@ section article,
   position: absolute;
   top: 1rem;
   right: 1rem;
-  background-color: var(--color-secundario);
-  color: var(--color-blanco);
+  background-color: var(--secondary-color);
+  color: var(--white-color);
   font-size: 0.85rem;
   font-weight: 700;
   padding: 0.25rem 0.75rem;
   border-radius: 50px;
-  font-family: var(--fuente-titulos);
+  font-family: var(--font-heading);
 }
 
+/* Tablas de tarifas y recorridos */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin: var(--espacio-sm) 0;
-  background-color: var(--color-blanco);
+  margin: var(--space-sm) 0;
+  background-color: var(--white-color);
   font-size: 0.8rem;
 }
 
@@ -159,18 +161,19 @@ th, td {
 }
 
 th {
-  background-color: var(--color-primario);
-  color: var(--color-blanco);
-  font-family: var(--fuente-titulos);
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-family: var(--font-heading);
 }
 
 tbody tr:nth-child(even) {
   background-color: #f8fafc;
 }
 
+/* Formulario de reservas */
 form {
-  background-color: var(--color-blanco);
-  padding: var(--espacio-sm);
+  background-color: var(--white-color);
+  padding: var(--space-sm);
   border-radius: 8px;
   border: 1px solid #e2e8f0;
 }
@@ -178,26 +181,26 @@ form {
 fieldset {
   border: 1px solid #cbd5e1;
   border-radius: 6px;
-  padding: var(--espacio-sm);
-  margin-bottom: var(--espacio-md);
+  padding: var(--space-sm);
+  margin-bottom: var(--space-md);
 }
 
 legend {
-  font-family: var(--fuente-titulos);
+  font-family: var(--font-heading);
   font-weight: 600;
-  color: var(--color-primario);
-  padding: 0 var(--espacio-xs);
+  color: var(--primary-color);
+  padding: 0 var(--space-xs);
 }
 
 form p {
-  margin-bottom: var(--espacio-sm);
+  margin-bottom: var(--space-sm);
 }
 
 form label {
   display: block;
   font-weight: 600;
-  margin-bottom: var(--espacio-xs);
-  color: var(--color-acento);
+  margin-bottom: var(--space-xs);
+  color: var(--accent-color);
 }
 
 input:not([type="checkbox"]):not([type="radio"]),
@@ -205,22 +208,23 @@ select,
 textarea {
   display: block;
   width: 100%;
-  border: 1px solid var(--gris-asfalto);
-  padding: var(--espacio-xs);
+  border: 1px solid var(--text-color);
+  padding: var(--space-xs);
   border-radius: 4px;
-  font-family: var(--fuente-cuerpo);
+  font-family: var(--font-body);
   background-color: #fff;
 }
 
+/* Botones */
 button, 
 input[type="submit"],
-.btn-accion {
-  background-color: var(--color-primario);
-  color: var(--color-blanco);
-  padding: var(--espacio-sm) var(--espacio-md);
+.btn-action {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: var(--space-sm) var(--space-md);
   border: none;
   border-radius: 6px;
-  font-family: var(--fuente-cuerpo);
+  font-family: var(--font-body);
   font-weight: 600;
   cursor: pointer;
   text-decoration: none;
@@ -229,24 +233,25 @@ input[type="submit"],
   width: 100%;
 }
 
+/* Pie de pagina y boton flotante */
 footer {
-  background-color: var(--color-blanco);
+  background-color: var(--white-color);
   border-top: 1px solid #ddd;
-  padding: var(--espacio-md) var(--espacio-sm);
+  padding: var(--space-md) var(--space-sm);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: var(--espacio-sm);
+  gap: var(--space-sm);
 }
 
 .btn-whatsapp {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
-  background-color: var(--color-whatsapp);
-  color: var(--color-blanco);
+  background-color: var(--whatsapp-color);
+  color: var(--white-color);
   padding: 0.5rem 1rem;
   border-radius: 50px;
   text-decoration: none;
@@ -256,15 +261,16 @@ footer {
   z-index: 1000;
 }
 
+/* Estilos responsive para tablet */
 @media (min-width: 768px) {
   main {
-    padding: var(--espacio-md);
+    padding: var(--space-md);
   }
 
   header {
     flex-direction: row;
     justify-content: space-between;
-    padding: var(--espacio-md) var(--espacio-lg);
+    padding: var(--space-md) var(--space-lg);
   }
 
   header img {
@@ -273,41 +279,41 @@ footer {
 
   nav ul#menu {
     flex-direction: row;
-    gap: var(--espacio-md);
+    gap: var(--space-md);
   }
 
   .portada-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--espacio-lg);
+    gap: var(--space-lg);
     align-items: center;
   }
 
   .galeria-rutas {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--espacio-md);
+    gap: var(--space-md);
   }
 
-  .contenedor-flota {
+  .fleet-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--espacio-md);
+    gap: var(--space-md);
   }
 
   .main-reservas {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: var(--espacio-lg);
+    gap: var(--space-lg);
   }
 
-  .fila-campos {
+  .field-row {
     display: flex;
     flex-direction: row;
-    gap: var(--espacio-md);
+    gap: var(--space-md);
   }
 
-  .fila-campos p {
+  .field-row p {
     flex: 1;
   }
 
@@ -316,44 +322,45 @@ footer {
   }
 
   th, td {
-    padding: var(--espacio-sm) var(--espacio-md);
+    padding: var(--space-sm) var(--space-md);
   }
 
   form {
-    padding: var(--espacio-lg);
+    padding: var(--space-lg);
   }
 
   fieldset {
-    padding: var(--espacio-md);
+    padding: var(--space-md);
   }
 
   input:not([type="checkbox"]):not([type="radio"]),
   select,
   textarea {
-    padding: var(--espacio-sm);
+    padding: var(--space-sm);
   }
 
   button, 
   input[type="submit"],
-  .btn-accion {
+  .btn-action {
     width: auto;
-    padding: var(--espacio-sm) var(--espacio-lg);
+    padding: var(--space-sm) var(--space-lg);
   }
 
   footer {
     flex-direction: row;
     justify-content: space-between;
-    padding: var(--espacio-md) var(--espacio-lg);
+    padding: var(--space-md) var(--space-lg);
     text-align: left;
   }
 }
 
+/* Estilos responsive para escritorio */
 @media (min-width: 1200px) {
   .galeria-rutas {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .contenedor-flota {
+  .fleet-container {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
 
