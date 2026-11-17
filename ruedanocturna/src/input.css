@@ -1,28 +1,30 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Open+Sans:wght@400;600&display=swap');
 
+/* Colores y fuentes del proyecto */
 @theme {
-  --color-primario: #1b4d3e;
-  --color-secundario: #e67e22;
-  --color-acento: #0f172a;
-  --color-fondo: #fdfbf7;
-  --color-texto: #5b6470;
-  --color-amarillo-farol: #FFD166;
+  --color-primary: #1b4d3e;
+  --color-secondary: #e67e22;
+  --color-accent: #0f172a;
+  --color-bg-light: #fdfbf7;
+  --color-text-muted: #5b6470;
+  --color-lantern-yellow: #FFD166;
 
   --font-montserrat: 'Montserrat', sans-serif;
   --font-opensans: 'Open Sans', sans-serif;
 }
 
+/* Botones personalizados */
 @layer components {
   .btn-primary {
-    @apply inline-block bg-primario text-white dark:bg-amarillo-farol dark:text-slate-950 font-bold px-6 py-3 rounded-xl hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-secundario transition-colors uppercase tracking-wider text-sm shadow-lg font-titulos;
+    @apply inline-block bg-primary text-white dark:bg-lantern-yellow dark:text-slate-950 font-bold px-6 py-3 rounded-xl hover:opacity-90 transition-colors uppercase text-sm shadow-lg font-montserrat;
   }
 
   .btn-primary-sm {
-    @apply inline-block bg-primario text-white dark:bg-amarillo-farol dark:text-slate-950 font-bold px-5 py-2.5 rounded-xl hover:opacity-90 transition-colors uppercase tracking-wider text-xs shadow-lg text-center font-titulos;
+    @apply inline-block bg-primary text-white dark:bg-lantern-yellow dark:text-slate-950 font-bold px-5 py-2.5 rounded-xl hover:opacity-90 transition-colors uppercase text-xs shadow-lg text-center font-montserrat;
   }
 
   .btn-outline {
-    @apply inline-block bg-transparent text-primario dark:text-amarillo-farol border border-primario/50 dark:border-amarillo-farol/50 font-bold px-6 py-3 rounded-xl hover:bg-primario/10 dark:hover:bg-amarillo-farol/10 focus:outline-none focus:ring-2 focus:ring-secundario transition-colors uppercase tracking-wider text-sm font-titulos;
+    @apply inline-block bg-transparent text-primary dark:text-lantern-yellow border border-primary/50 dark:border-lantern-yellow/50 font-bold px-6 py-3 rounded-xl hover:bg-primary/10 dark:hover:bg-lantern-yellow/10 transition-colors uppercase text-sm font-montserrat;
   }
 }
